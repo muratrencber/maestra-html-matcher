@@ -1,0 +1,33 @@
+{
+    "name": "Português",
+    "flag": "pt",
+    "button_text":"Procurar Arquivo",
+    "notice_text":"* Não é necessário cartão de crédito ou conta",
+    "breadcrumbs":{
+        "home":{
+            "path":"pt",
+            "display":"Pagina Inicial"
+        },
+        "tools":{
+            "path":"pt/ferramentas",
+            "display":"Ferramentas"
+        },
+        "video-dubber":{
+            "path":"pt/ferramentas/dublador-de-video",
+            "display":"Dublador de Vídeo"
+        },
+        "subtitle-translator":{
+            "path":"pt/ferramentas/tradutor-de-legendas",
+            "display":"Tradutor de Legendas"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. Todos os direitos reservados. ",
+        "subtitle_translator": "Tradutor de Legendas" ,
+        "transcribe_youtube":  "Transcrever vídeo do YouTube" ,
+        "srt_generator":       "Gerador SRT" ,
+        "transcribe_arabic":   "Transcrever árabe" ,
+        "transcribe_spanish":  "transcrever espanhol" ,
+        "transcribe_french":   "transcrever francês"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "中文",
+    "flag": "cn",
+    "button_text":"浏览文件",
+    "notice_text":"*无需信用卡或账户",
+    "breadcrumbs":{
+        "home":{
+            "path":"zh",
+            "display":"主页"
+        },
+        "tools":{
+            "path":"zh/tools",
+            "display":"工具 工具 工具" 
+        },
+        "video-dubber":{
+            "path":"zh/tools/video-dubber",
+            "display":"視頻配音"
+        },
+        "subtitle-translator":{
+            "path":"zh/tools/subtitle-translator",
+            "display":"字幕翻譯器"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. 版權所有。保留所有權利。",
+        "subtitle_translator": "字幕翻譯器" ,
+        "transcribe_youtube":  "轉錄 YouTube 視頻" ,
+        "srt_generator":       "SRT發電機" ,
+        "transcribe_arabic":   "轉錄阿拉伯語" ,
+        "transcribe_spanish":  "轉錄西班牙語" ,
+        "transcribe_french":   "轉錄法語"
+    }
+}

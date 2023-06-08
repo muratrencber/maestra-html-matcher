@@ -1,0 +1,33 @@
+{
+    "name": "Dansk",
+    "flag": "dk",
+    "button_text":"Gennemse filer",
+    "notice_text":"*Ingen kreditkort eller konto påkrævet",
+    "breadcrumbs":{
+        "home":{
+            "path":"da",
+            "display":"Hjem"
+        },
+        "tools":{
+            "path":"da/vaerktojer",
+            "display":"Vaerktojer"
+        },
+        "video-dubber":{
+            "path":"da/vaerktojer/video-dubber",
+            "display":"Video Dubber"
+        },
+        "subtitle-translator":{
+            "path":"da/vaerktojer/undertekst-oversaetter",
+            "display":"Undertekstoversætter"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. Alle rettigheder forbeholdes. ",
+        "subtitle_translator": "Undertekstoversætter" ,
+        "transcribe_youtube":  "Transskriber YouTube-video" ,
+        "srt_generator":       "SRT generator" ,
+        "transcribe_arabic":   "Transskriber arabisk" ,
+        "transcribe_spanish":  "Transskriber spansk" ,
+        "transcribe_french":   "Transskriber fransk"
+    }
+}

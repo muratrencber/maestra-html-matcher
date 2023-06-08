@@ -1,0 +1,156 @@
+#addict f"../langdata/{environ.lang}.json"
+
+#rreplace "\"../../assets" "\"/assets"
+#rreplace "\"../assets" "\"/assets"
+#rreplace " ➜" ""
+#treplace "\"../../assets" "\"/assets"
+#treplace "\"../assets" "\"/assets"
+
+#tremove %aside%
+#tremove %section.yt-full%
+
+#treplace "\"name\": \"Home\"" f"\"name\": \"{breadcrumbs.home.display}\""
+#treplace "\"item\": \"https://maestra.ai/\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.home.path}/\""
+#treplace "\"name\": \"Tools\"" f"\"name\": \"{breadcrumbs.tools.display}\""
+#treplace "\"item\": \"https://maestra.ai/tools/\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.tools.path}/\""
+#treplace "\"name\": \"Video Dubber\"" f"\"name\": \"{breadcrumbs.video-dubber.display}\""
+
+%head% <-> %%:
+    %title% = %title%
+    %meta[name="description"]%.content = %meta[name="description"]%.content
+    %meta[name="description"]%.content = %meta[name="description"]%.content
+    %meta[property="og:title"]%.content = %meta[property="og:title"]%.content
+    %meta[property="og:description"]%.content = %meta[property="og:description"]%.content
+%body > header% <-> %body > header%:
+    %nav[id="ms-nav"] > ul > li%[1:] <-> %ul[class="navbar-nav"] li%[1:]:
+        %a%.text = %a%.text
+    %nav[id="ms-side-nav"] > ul > li%[0] <-> %ul[class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto"] li%[2]:
+        %a%.text = %a%.text
+    %nav[id="ms-side-nav"] > ul > li%[2] <-> %ul[class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto"] li%[0]:
+        %a%.text = %a%.text
+    %nav[id="ms-side-nav"] > ul > li%[1] <-> %ul[class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto"] li%[1]:
+        %a%.text = %a%.text
+    %li.has-child% <-> %li[class="nav-item dropdown dropdown-animate"]%:
+        %a%.text = %a%.text
+        %div[class="mega-fullrow fullsize"]%[:] <-> %div[class="media d-flex align-items-center"]%[:]:
+            %span.submenu-title%.text = %h6%.text
+            %p%.text = %small.text-sm%.text
+        %ul.submega-nav% <-> %div[class="dropdown-menu-links rounded-bottom delimiter-top p-4"] > div.row%:
+            %li a%[:].text = %a%[:-2].text
+%body > footer% <-> %body > footer%:
+    %div.fb-copy p%.text = {footer.copy_text}
+    %div.container% <-> %div[class="row pt-md align-items-center justify-content-center"]%:
+        %div.ms-col% <-> %div.card%:
+            %span.ms-name%.text = %h5%.text
+            %p%.text = %p%.text
+            %a%.text = %a%.text
+        %div[class="footer-col"]%[0] <-> %div[class="row pt-md align-items-center justify-content-center"] > div%[1]:
+            %span%.text = %h6%.text
+            %a%[:7].text = %a%[:].text
+            %a%[:7].href = %a%[:].href
+            %a%[7].text = {footer.subtitle_translator}
+            %a%[8].text = {footer.transcribe_youtube}
+            %a%[9].text = {footer.srt_generator}
+        %div[class="footer-col"]%[1] <-> %div[class="row pt-md align-items-center justify-content-center"] >div%[2]:
+            %span%.text = %h6%.text
+            %a%[:].text = %a%[:].text
+            %a%[:].href = %a%[:].href
+        %div[class="footer-col"]%[2] <-> %div[class="row pt-md align-items-center justify-content-center"] >div%[3]:
+            %span%.text = %h6%.text
+            %a%[0].text = %a%[0].text
+            %a%[1].text = %a%[1].text
+            %a%[2].text = {footer.transcribe_arabic}
+            %a%[3].text = {footer.transcribe_spanish}
+            %a%[4].text = {footer.transcribe_french}
+    %div[class="footer-bottom fullsize"]% <-> %div[class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0"]%:
+        %ul li a%[0] = %div[class="col-md-6"] li[class="nav-item"] a%[2]
+        %ul li a%[1] = %div[class="col-md-6"] li[class="nav-item"] a%[1]
+        %ul li a%[2] = %div[class="col-md-6"] li[class="nav-item"] a%[0]
+        %li.fb-lang% <-> %%:
+            %span.active-lang img%.alt = {environ.lang}
+            %span.active-lang img%.data-src = f"/assets/template/img/svg/flags/{flag}.svg"
+            %span.active-lang img%.src = f"/assets/template/img/svg/flags/{flag}.svg"
+            %span.active-lang%.text = {name}
+
+
+%html%.lang = {environ.lang}
+%body > main% <-> %body%:
+    %ul[class="breadcrumb-row container"]% <-> %%:
+        %a%[0].href = f"https://maestra.ai/{breadcrumbs.home.path}"
+        %a%[0].text = {breadcrumbs.home.display}
+        %a%[1].href = f"https://maestra.ai/{breadcrumbs.tools.path}"
+        %a%[1].text = {breadcrumbs.tools.display}
+        %li%[4].text = {breadcrumbs.video-dubber.display}
+    %div[class="dt-sec fullsize"]% <-> %div[class="col-lg-10 text-center"]%:
+        %h1%.text = %h1 strong%.text
+        %h2%.text = %h2%.text
+        %p% = %p%
+        %a%.text = {button_text}
+        %p[class="requirements-notice"]%.text = {notice_text}
+        %div[class="hero-video video-holder fullsize"]% <-> %div[class="col-md-12 row"]%:
+            %div:nth-child(1)% <-> %div[class="col-md-6 comp-element"]:nth-child(1)%:
+                %h3% = %h2%
+                %video% = %video%
+            %div:nth-child(2)% <-> %div[class="col-md-6 comp-element"]:nth-child(2)%:
+                %h3% = %h2%
+                %video% = %div video%
+                %div[class="flag-trigger-holder fullsize"]% = %div:nth-child(3)%
+    %div[class="sub-video-steps general-flex fullsize"]% <-> %div[class="card p-3 col-lg-12"]%:
+        %div[class="sub-video-card"]%[:] <-> %div[class="col-lg-12 hover-translate-y-n3 hover-shadow-lg p-3 d-flex flex-lg-row flex-column"]%[:]:
+            %img%.alt = %div[class="col-lg-4"] > img%.alt
+            %h2%.text = %h5%.text
+            %p% = %p%
+    %section[class="gradient-title simple-t-tx sec-row fullsize"]% <-> %div[class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 mt-4 mb-8"]%:
+        %h2%.text = %h2%.text
+        %p%[:] = %p%[:]
+        %a%.text = %span%.text
+    %section[id="widen-audience"] > div% <-> %div[class="row justify-content-center text-center"] > div%:
+        %h2% = %h2%
+        %p% = %p%
+    %section[id="time-saving"]% <-> %div[class="pr-md-4"]%[0]:
+        %span% = %span%[0]
+        %h3% = %h3%
+        %p% = %p%
+        %li% = %span%[1]
+    %section[id="time-saving"]% <-> %div[class="col-lg-7 order-lg-1 perspective-left hover-scale-111"]%:
+        %img% = %img%
+    %section[id="ms-embed-player"]% <-> %div[class="pr-md-4"]%[1]:
+        %span% = %span%[0]
+        %h2% = %h5%
+        %p%[0] = %p%[0]
+        %p img%.src => %p img%.src
+        %p%[1] = %p%[1]
+        %a%.text = %strong%.text
+    %div[id="embed"]% <-> %div[id="embed"]%:
+        %img% = %img%
+    %div[class="lang-details half-size"]% <-> %div[class="pr-md-4"]%[2]:
+        %h2%[0] = %h3%[0]
+        %p%[0] = %p%[0]
+        %h2%[1] = %h3%[1]
+        %p%[1] = %p%[1]
+        %a%.text = %a%.text
+        %a%[1].text = %strong%.text
+    %div[class="lang-pack"]% <-> %div[class="col-xl-5 col-lg-5 order-lg-1"] div[class="card-body"]%:
+        %span%[0] = %h6 span%
+        %span%[1] = %h6 strong%
+        %ul li a%[:] = %div[class="col-6 pl-0"] p a%[:]
+        %a[class="lang-all"]% = %div[class="col-6 pl-0"] > a%
+    %section[id="generate-sub"] > h2% = %h1[class="mb-4 text-white h2"]%
+    %div[class="ta-box solid-half"]%[:] <-> %div[class="p-3 d-flex"]%[:]:
+        %h3% = %span%
+        %p% = %p%
+    %section[id="generate-sub-2"]% <-> %section[class="slice slice-lg bg-dark"]%:
+        %h2% = %h2%
+        %div[class="add-info"]% <-> %div[class="mt-5 text-center"]%:
+            %p% = %p%
+            %a%.text = %a%.text
+    %div[class="step-no-item flex-box-holder"]%[:] <-> %div[class="media align-items-center"]%[:]:
+        %div[class="stp-dt"]% <-> %div[class="media-body"]%:
+            %h3% = %h6%
+            %p% = %span%
+    %section[id="all-in-one"] > div > div div[class="dt-sec half-size"]% <-> %div[class="container position-relative zindex-100 px-5"] > div div[class="col-lg-6 offset-xl-0"]%:
+        %span% = %span%
+        %h2% = %h3%
+        %p% = %p%
+        %a%.text = %strong%.text
+        %p%[1] = %p%[1]

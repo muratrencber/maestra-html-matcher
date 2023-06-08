@@ -1,0 +1,33 @@
+{
+    "name": "Suomi",
+    "flag": "fi",
+    "button_text":"Selata Tiedostoa",
+    "notice_text":"* Luottokorttia tai tiliä ei vaadita",
+    "breadcrumbs":{
+        "home":{
+            "path":"fi",
+            "display":"Koti"
+        },
+        "tools":{
+            "path":"fi/tyokalut",
+            "display":"Vaerktojer"
+        },
+        "video-dubber":{
+            "path":"fi/tyokalut/video-dubberi",
+            "display":"Video Dubberi"
+        },
+        "subtitle-translator":{
+            "path":"fi/tyokalut/tekstityksen-kaantaja",
+            "display":"Tekstityksen kääntäjä"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. Kaikki oikeudet pidätetään. ",
+        "subtitle_translator": "" ,
+        "transcribe_youtube":  "" ,
+        "srt_generator":       "" ,
+        "transcribe_arabic":   "" ,
+        "transcribe_spanish":  "" ,
+        "transcribe_french":   ""
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "عربي",
+    "flag": "sa",
+    "button_text":"ملف الاستعراض",
+    "notice_text":"* لا يلزم وجود بطاقة ائتمان أو حساب",
+    "brands-using":"العلامات التجارية التي تستخدم Maestra:",
+    "breadcrumbs":{
+        "home":{
+            "path":"ar",
+            "display":"الصفحة الرئيسية"
+        },
+        "tools":{
+            "path":"ar/tools",
+            "display":"أدوات"
+        },
+        "video-dubber":{
+            "path":"ar/tools/video-dubber",
+            "display":"صوت إلى نص"
+        },
+        "subtitle-translator":{
+            "path":"ar/tools/subtitle-translator",
+            "display":"مترجم الترجمة"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 منصة كتارا تيك. جميع الحقوق محفوظة",
+        "subtitle_translator":"مترجم الترجمة",
+        "transcribe_youtube": "نسخ فيديو يوتيوب",
+        "srt_generator":  "مولد SRT",
+        "transcribe_arabic": "كتابة العربية",
+        "transcribe_spanish":"نسخ الإسبانية",
+        "transcribe_french": "نسخ الفرنسية"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "Svenska",
+    "flag": "se",
+    "button_text":"Bläddra bland filer",
+    "notice_text":"*Inget kreditkort eller konto krävs",
+    "breadcrumbs":{
+        "home":{
+            "path":"sv",
+            "display":"Hemsida"
+        },
+        "tools":{
+            "path":"sv/verktyg",
+            "display":"Verktyg"
+        },
+        "video-dubber":{
+            "path":"sv/verktyg/video-dubber",
+            "display":"Video Dubber"
+        },
+        "subtitle-translator":{
+            "path":"sv/verktyg/undertext-oversattare",
+            "display":"Undertextöversättare"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. Kopiering förbjuden. ",
+        "subtitle_translator": "Undertextöversättare" ,
+        "transcribe_youtube":  "Transkribera YouTube-video" ,
+        "srt_generator":       "SRT-generator" ,
+        "transcribe_arabic":   "Transkribera arabiska" ,
+        "transcribe_spanish":  "Transkribera spanska" ,
+        "transcribe_french":   "Transkribera franska"
+    }
+}

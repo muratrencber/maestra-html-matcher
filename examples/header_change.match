@@ -1,0 +1,16 @@
+%body > header% <-> %body > header%:
+    %nav[id="ms-nav"] > ul > li%[1:] <-> %ul[class="navbar-nav"] li%[1:]:
+        %a%.text = %a%.text
+    %nav[id="ms-side-nav"] > ul > li%[0] <-> %ul[class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto"] li%[2]:
+        %a%.text = %a%.text
+    %nav[id="ms-side-nav"] > ul > li%[2] <-> %ul[class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto"] li%[0]:
+        %a%.text = %a%.text
+    %nav[id="ms-side-nav"] > ul > li%[1] <-> %ul[class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto"] li%[1]:
+        %a%.text = %a%.text
+    %li.has-child% <-> %li[class="nav-item dropdown dropdown-animate"]%:
+        %a%.text = %a%.text
+        %div[class="mega-fullrow fullsize"]%[:] <-> %div[class="media d-flex align-items-center"]%[:]:
+            %span.submenu-title%.text = %h6%.text
+            %p%.text = %small.text-sm%.text
+        %ul.submega-nav% <-> %div[class="dropdown-menu-links rounded-bottom delimiter-top p-4"] > div.row%:
+            %li a%[:].text = %a%[:-2].text

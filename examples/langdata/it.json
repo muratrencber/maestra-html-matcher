@@ -1,0 +1,33 @@
+{
+    "name": "Italiano",
+    "flag": "it",
+    "button_text":"Sfoglia File",
+    "notice_text":"*Non è richiesta alcuna carta di credito o account",
+    "breadcrumbs":{
+        "home":{
+            "path":"it",
+            "display":"Casa"
+        },
+        "tools":{
+            "path":"it/strumenti",
+            "display":"Strumenti"
+        },
+        "video-dubber":{
+            "path":"it/strumenti/videodoppiatore",
+            "display":"Videodoppiatore"
+        },
+        "subtitle-translator":{
+            "path":"it/strumenti/tradurre-sottotitoli",
+            "display":"Traduttore di sottotitoli"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. Tutti i diritti riservati. ",
+        "subtitle_translator": "Traduttore di sottotitoli" ,
+        "transcribe_youtube":  "Trascrivi video di YouTube" ,
+        "srt_generator":       "Generatore SRT" ,
+        "transcribe_arabic":   "Trascrivere l'arabo" ,
+        "transcribe_spanish":  "Trascrivere spagnolo" ,
+        "transcribe_french":   "Trascrivere francese"
+    }
+}

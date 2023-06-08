@@ -1,0 +1,33 @@
+{
+    "name": "日本語",
+    "flag": "jp",
+    "button_text":"ファイルを参照する",
+    "notice_text":"* クレジットカードやアカウントは必要ありません",
+    "breadcrumbs":{
+        "home":{
+            "path":"ja",
+            "display":"ホームページ"
+        },
+        "tools":{
+            "path":"ja/tools",
+            "display":"ツール"
+        },
+        "video-dubber":{
+            "path":"ja/tools/video-dubber",
+            "display":"ビデオダバー"
+        },
+        "subtitle-translator":{
+            "path":"ja/tools/subtitle-translator",
+            "display":"字幕翻訳者"
+        }
+    },
+    "footer":{
+        "copy_text":"© 2023 Katara Tech, Inc. 無断複写・転載を禁じます。",
+        "subtitle_translator": "字幕翻訳者" ,
+        "transcribe_youtube":  "YouTube ビデオの文字起こし" ,
+        "srt_generator":       "SRT ジェネレーター" ,
+        "transcribe_arabic":   "アラビア語を転写する" ,
+        "transcribe_spanish":  "スペイン語の転写" ,
+        "transcribe_french":   "フランス語の転写"
+    }
+}
