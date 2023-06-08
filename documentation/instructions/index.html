@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Manipulations - Maestra HTML Matcher Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Maestra HTML Matcher Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Quick Start</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Manipulations</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../primitives/" class="nav-link">Primitives</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../primitives/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#manipulations" class="nav-link">Manipulations</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#assignment" class="nav-link">Assignment</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#context-change" class="nav-link">Context Change</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#insertion" class="nav-link">Insertion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#commands" class="nav-link">Commands</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#dictionary-command" class="nav-link">Dictionary Command</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#replace-command" class="nav-link">Replace Command</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#remove-command" class="nav-link">Remove Command</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#translate-command" class="nav-link">Translate Command</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#include-command" class="nav-link">Include Command</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="manipulations">Manipulations</h1>
+<p>Generally, manipulation operations consist of two blocks:</p>
+<p><code>do something on the target</code> <code>operator</code> <code>do something on the reference</code></p>
+<p>Left side is for the target, and the right side is for the reference HTML.</p>
+<h2 id="assignment">Assignment</h2>
+<p>Gets the attribute/innerHTML/text value from the specified reference HTML element(s) and assigns it to the specified target element attribute(s)/innerHTML(s)/text(s).</p>
+<p>Usage:</p>
+<p><code>%&lt;CSS selector for target&gt;%([index | from:to])(.attribute) = %&lt;CSS selector for reference&gt;%([index | from:to])(.attribute)</code></p>
+<p><code>%&lt;CSS selector for target&gt;%([index | from:to])(.attribute) = "&lt;some string&gt;"</code></p>
+<p><code>%&lt;CSS selector for target&gt;%([index | from:to])(.attribute) = f"some {formatted} string"</code></p>
+<p>If assignments are for multiple elements, the assignment loops for min size.</p>
+<p>Example:</p>
+<p>Let the initial context be:</p>
+<p>For target:</p>
+<pre><code class="language-html">&lt;div class=&quot;div-list&quot;&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;I&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Hate&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;CSS&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>For reference:</p>
+<pre><code class="language-html">&lt;ul&gt;
+    &lt;li&gt;I&lt;/li&gt;
+    &lt;li&gt;Really&lt;/li&gt;
+    &lt;li&gt;Hate&lt;/li&gt;
+    &lt;li&gt;Styled Divs&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Let's say we wanted to get the texts from the reference and assign them to the target. Note that the reference has an additional element which we want to exclude.</p>
+<h3 id="test-1">Test 1</h3>
+<pre><code>%div.div-list-element p%[0].text = %ul li%[0].text
+%div.div-list-element p%[1].text = %ul li%[2].text
+%div.div-list-element p%[2].text = %ul li%[3].text
+</code></pre>
+<p>Result:</p>
+<pre><code class="language-html">&lt;div class=&quot;div-list&quot;&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;I&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Hate&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Styled Divs&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="test-2">Test 2</h3>
+<pre><code>%div.div-list-element p%[:].text = %ul li%[:].text
+</code></pre>
+<p>Result:</p>
+<pre><code class="language-html">&lt;div class=&quot;div-list&quot;&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;I&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Really&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Hate&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="test-3">Test 3</h3>
+<pre><code>%div.div-list-element p%[0].text = %ul li%[0].text
+%div.div-list-element p%[1:].text = %ul li%[2:].text
+</code></pre>
+<p>Result:</p>
+<pre><code class="language-html">&lt;div class=&quot;div-list&quot;&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;I&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Hate&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;div-list-element&quot;&gt;&lt;p&gt;Styled Divs&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="context-change">Context Change</h2>
+<p>Changes the current HTML root for the indented subinstructions.</p>
+<p>Usage:</p>
+<p><code>%&lt;CSS selector for target&gt;%([index | from:to]) &lt;-&gt; %&lt;CSS selector for reference&gt;%([index | from:to])</code></p>
+<p>If selectors are selecting multiple elements, the subinstructions loop for the minimum size.</p>
+<p>Examples:</p>
+<p>Target file initial context:</p>
+<pre><code class="language-html">&lt;div class=&quot;a&quot;&gt;
+    &lt;div&gt;Something&lt;/div&gt;
+    &lt;div&gt;
+        &lt;p&gt;Other thing&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;This is empty&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Reference file initial context:</p>
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;xyz&quot;&gt;
+        &lt;p&gt;Bir şeyler&lt;/p&gt;
+        &lt;p&gt;Öbür şeyler&lt;/p&gt;
+        &lt;p&gt;Bu da boş&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Applying:</p>
+<pre><code>%div.a% &lt;-&gt; %div.container%:
+    %% &lt;-&gt; %div.xyz%:
+        ...
+    %div%[1] &lt;-&gt; %div%:
+        ...
+</code></pre>
+<p>Let's inspect it line by line.
+After applying the first line, new contexts are:</p>
+<p>For target file:</p>
+<pre><code class="language-html">&lt;div&gt;Something&lt;/div&gt;
+&lt;div&gt;
+    &lt;p&gt;Other thing&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;This is empty&lt;/div&gt;
+</code></pre>
+<p>For reference file:</p>
+<pre><code class="language-html">&lt;div class=&quot;xyz&quot;&gt;
+    &lt;p&gt;Bir şeyler&lt;/p&gt;
+    &lt;p&gt;Öbür şeyler&lt;/p&gt;
+    &lt;p&gt;Bu da boş&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>After applying the second line:</p>
+<p>Target file: Nothing changed, note that the CSS selector was empty.</p>
+<p>Reference file:</p>
+<pre><code class="language-html">&lt;p&gt;Bir şeyler&lt;/p&gt;
+&lt;p&gt;Öbür şeyler&lt;/p&gt;
+&lt;p&gt;Bu da boş&lt;/p&gt;
+</code></pre>
+<p>Then there is a dummy line <code>...</code>. Let's assume that some operations are applied in this line. After this line, we go 4 tabs back, this means we got back to the context resulted from the first line. After applying the second subinstruction of the first line (which is <code>%div%[1] &lt;-&gt; %div%:</code>) the new context is:</p>
+<p>For target file:</p>
+<pre><code class="language-html">&lt;p&gt;Other thing&lt;/p&gt;
+</code></pre>
+<p>For reference file:</p>
+<pre><code class="language-html">&lt;p&gt;Bir şeyler&lt;/p&gt;
+&lt;p&gt;Öbür şeyler&lt;/p&gt;
+&lt;p&gt;Bu da boş&lt;/p&gt;
+</code></pre>
+<h2 id="insertion">Insertion</h2>
+<p>Inserts the specified HTML string as the target context child.</p>
+<p>Usage:</p>
+<p><code>+&lt;html string&gt;+</code></p>
+<p>Example:</p>
+<p>Target context:</p>
+<pre><code class="language-html">&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>Applying:</p>
+<pre><code>%ul% &lt;-&gt; %%:
+    +&lt;li&gt;dummy&lt;/li&gt;+
+%ul li%[4] = &quot;Item 5&quot;
+</code></pre>
+<p>First line changes the context to:</p>
+<pre><code class="language-html">&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;li&gt;Item 4&lt;/li&gt;
+</code></pre>
+<p>After the second line:</p>
+<pre><code class="language-html">&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;li&gt;Item 4&lt;/li&gt;
+&lt;li&gt;dummy&lt;/li&gt;
+</code></pre>
+<p>Third line goes back one tab, context is restored to the original one. Then we are selecting the 5th element and changing its contents with a literal string. Result:</p>
+<pre><code class="language-html">&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h1 id="commands">Commands</h1>
+<p>All commands start with the <code>#</code> prefix. Some may also have the prefix <code>t</code> or <code>r</code> depending on which file will they operate.</p>
+<h2 id="dictionary-command">Dictionary Command</h2>
+<p>Usage:</p>
+<p><code>#addict &lt;path to json file&gt;</code></p>
+<p>Reads the JSON file from the specified path and appends all of its elements to the root of the dictionary of the matcher.</p>
+<p>Note that the dictonary of the matcher always has the <code>environ</code> key, which is populated with the given environment variables when running the program. For example:</p>
+<p><code>python main.py &lt;target path&gt; &lt;reference path&gt; &lt;instruction path&gt; -e myvar=test -e myvar2=test -o &lt;output path&gt;</code></p>
+<p>Initially the matcher dictionary is:</p>
+<pre><code class="language-json">{
+    &quot;environ&quot;: {
+        &quot;myvar&quot;: &quot;test&quot;,
+        &quot;myvar2&quot;: &quot;test&quot;
+    }
+}
+</code></pre>
+<p>This gives great flexibility when specifying the dictionary path. Here is another example:</p>
+<p><code>python main.py &lt;target path&gt; &lt;reference path&gt; &lt;instruction path&gt; -e lang=ar -o &lt;output path&gt;</code></p>
+<p>Initial dictionary:</p>
+<pre><code class="language-json">{
+    &quot;environ&quot;: {
+        &quot;lang&quot;: &quot;ar&quot;
+    }
+}
+</code></pre>
+<p>Then, we can dynamically load the target language dictionary with the formatted string.</p>
+<p>The file <code>dicts/ar.json</code>:</p>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;عربي&quot;,
+    &quot;flag&quot;: &quot;sa&quot;,
+    &quot;button_text&quot;:&quot;ملف الاستعراض&quot;,
+    &quot;notice_text&quot;:&quot;* لا يلزم وجود بطاقة ائتمان أو حساب&quot;,
+    &quot;brands-using&quot;:&quot;العلامات التجارية التي تستخدم Maestra:&quot;
+}
+</code></pre>
+<p>Command:</p>
+<p><code>#addict f"dicts/{environ.lang}.json"</code> which is equivalent to <code>#addict "dicts/ar.json"</code></p>
+<p>After the command is applied, the matcher dictionary is:</p>
+<pre><code class="language-json">{
+    &quot;environ&quot;: {
+        &quot;lang&quot;: &quot;ar&quot;
+    },
+    &quot;name&quot;: &quot;عربي&quot;,
+    &quot;flag&quot;: &quot;sa&quot;,
+    &quot;button_text&quot;:&quot;ملف الاستعراض&quot;,
+    &quot;notice_text&quot;:&quot;* لا يلزم وجود بطاقة ائتمان أو حساب&quot;,
+    &quot;brands-using&quot;:&quot;العلامات التجارية التي تستخدم Maestra:&quot;
+}
+</code></pre>
+<h2 id="replace-command">Replace Command</h2>
+<p>Replaces the html string of target or reference file according to the given arguments.</p>
+<p>Usage:</p>
+<p><code>#(t|r)replace &lt;old string&gt; &lt;new string&gt;</code></p>
+<p>The prefix determines which file content will be replaced. <code>#treplace</code> replaces the contents of target file, while <code>#rreplace</code> replaces the contents of the reference file.</p>
+<p>Example:</p>
+<p>Target text:</p>
+<pre><code class="language-html">&lt;body&gt;
+    &lt;div&gt; Lorem ipsum dolor sit amet &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+<pre><code class="language-text">#treplace &quot;&lt;div&gt;&quot; &quot;&lt;p&gt;&quot;
+#treplace &quot;&lt;/div&gt;&quot; &quot;&lt;/p&gt;&quot;
+</code></pre>
+<p>Result:</p>
+<pre><code class="language-html">&lt;body&gt;
+    &lt;p&gt; Lorem ipsum dolor sit amet &lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+<p>String arguments can be formatted too. Example:</p>
+<p>Dictionary:</p>
+<pre><code class="language-json">&quot;heading&quot;: {
+    &quot;text&quot;: &quot;Testing&quot;,
+    &quot;data&quot;: 0451
+},
+&quot;date&quot;: &quot;2023-06-08&quot;
+</code></pre>
+<p>Reference text:</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+    ...
+&lt;/head&gt;
+</code></pre>
+<p>Applying command <code>#rreplace "My Page" f"{heading.text} Page: {date}"</code> results:</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;title&gt;Testing Page: 2023-06-08&lt;/title&gt;
+    ...
+&lt;/head&gt;
+</code></pre>
+<h2 id="remove-command">Remove Command</h2>
+<p>Removes the specified HTML element(s) of the target or reference file according to the given CSS selector.</p>
+<p>Usage:</p>
+<p><code>#(t|r)remove %&lt;CSS selector string&gt;%</code></p>
+<p><code>#(t|r)remove %&lt;CSS selector string&gt;%[index]</code></p>
+<p><code>#(t|r)remove %&lt;CSS selector string&gt;%[from:to]</code></p>
+<p>Examples:</p>
+<p><code>#rremove %img%[:]</code>: Removes all images from the reference HTML.</p>
+<p><code>#tremove %div.yt-sec%</code>: Removes the first <code>div</code> element having the class name <code>yt-sec</code> from the target HTML.</p>
+<h2 id="translate-command">Translate Command</h2>
+<p>Translates the specified HTML element(s) of the target file according to the given CSS selector and the environment variable <code>lang</code>. Uses Google Translate.</p>
+<p>Note: this command slows down the matching process severely.</p>
+<p>Usage:</p>
+<p><code>#translate %&lt;CSS selector string&gt;%</code></p>
+<p><code>#translate %&lt;CSS selector string&gt;%[index]</code></p>
+<p><code>#translate %&lt;CSS selector string&gt;%[from:to]</code></p>
+<h2 id="include-command">Include Command</h2>
+<p>Directly replaces itself with the contents of the file it was pointing to.</p>
+<p>Usage:</p>
+<p><code>#include &lt;path to another instruction file&gt;</code></p>
+<p>Example:</p>
+<p>Contents of ./std/hremovers/h1remove.match:</p>
+<pre><code class="language-text">#tremove %h1%[:]
+</code></pre>
+<p>Contents of ./std/hremovers/h2remove.match:</p>
+<pre><code class="language-text">#tremove %h2%[:]
+</code></pre>
+<p>Contents of ./std/hremove.match:</p>
+<pre><code class="language-text">#include &lt;hremovers/h1remove.match&gt;
+#include &lt;hremovers/h2remove.match&gt;
+</code></pre>
+<p>Contents of ./main.match:</p>
+<pre><code class="language-text">#include &lt;std/hremove.match&gt;
+
+%img%[:].alt = %img%[:].alt
+</code></pre>
+<p>After applying all the includes:</p>
+<p>Contents of ./main.match:</p>
+<pre><code class="language-text">#tremove %h1%
+#tremove %h2%
+
+%img%[:].alt = %img%[:].alt
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Maestra HTML Matcher Documentation</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Maestra HTML Matcher Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Quick Start</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="instructions/" class="nav-link">Manipulations</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="primitives/" class="nav-link">Primitives</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="instructions/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#quick-start" class="nav-link">Quick Start</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#run" class="nav-link">Run</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#examples" class="nav-link">Examples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="quick-start">Quick Start</h1>
+<h2 id="run">Run</h2>
+<p>Run command:</p>
+<pre><code class="language-bash">python main.py &quot;target_file_path&quot; &quot;reference_file_path&quot; &quot;instruction_file_path&quot; -e envvar1=envval1 -e envvar2=envval2 -o &quot;output_file_path&quot;
+</code></pre>
+<p>If you want to print debug information, add the <code>-d</code> flag.</p>
+<h2 id="examples">Examples</h2>
+<h3 id="maestra-head-change">Maestra Head Change</h3>
+<p>Target file:</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;title&gt;
+        Online Subtitle Translator &amp; Editor in 80+ Languages | Maestra
+    &lt;/title&gt;
+    &lt;meta name=&quot;description&quot;
+        content=&quot;Generate, edit and translate subtitles online using Maestra’s dedicated subtitle editor. Widen your reach by translating your subtitles to over 80 languages.&quot; /&gt;
+    &lt;!-- Facebook Tags --&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;Online Subtitle Translator &amp; Editor in 80+ Languages | Maestra&quot; /&gt;
+    &lt;meta property=&quot;og:description&quot;
+        content=&quot;Generate, edit and translate subtitles online using Maestra’s dedicated subtitle editor. Widen your reach by translating your subtitles to over 80 languages.&quot; /&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://maestra.ai/tools/subtitle-translator&quot; /&gt;
+    &lt;link rel=&quot;canonical&quot; href=&quot;https://maestra.ai/tools/subtitle-translator&quot; /&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/template/css/reset.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/template/css/fonts.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../../assets/template/css/style.css&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+<p>Reference file:</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;meta name=&quot;description&quot;
+        content=&quot;قم بإنشاء وتعديل وترجمة الترجمة عبر الإنترنت باستخدام محرر الترجمة المخصص من مايسترا. وسّع نطاق وصولك من خلال ترجمة ترجماتك إلى أكثر من 80 لغة.&quot; /&gt;
+    &lt;!-- Facebook Tags --&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;مترجم ومحرر للترجمات أونلاين لأكثر من 80 لغة | مايسترا&quot; /&gt;
+    &lt;meta property=&quot;og:description&quot;
+        content=&quot;قم بإنشاء وتعديل وترجمة الترجمة عبر الإنترنت باستخدام محرر الترجمة المخصص من مايسترا. وسّع نطاق وصولك من خلال ترجمة ترجماتك إلى أكثر من 80 لغة.&quot; /&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://maestrasuite.com/subtitle-translator&quot; /&gt;
+    &lt;link rel=&quot;canonical&quot; href=&quot;https://maestrasuite.com/subtitle-translator&quot; /&gt;
+    &lt;title&gt;
+        مترجم ومحرر للترجمات أونلاين لأكثر من 80 لغة | مايسترا
+    &lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/template/css/maestra.css&quot; id=&quot;stylesheet&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/template/css/rtl.css&quot; id=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+</code></pre>
+<p>Applying the instructions:</p>
+<pre><code class="language-text">#treplace &quot;\&quot;../../assets&quot; &quot;\&quot;/assets&quot;
+%head% &lt;-&gt; %%:
+    %title% = %title%
+    %meta[name=&quot;description&quot;]%.content = %meta[name=&quot;description&quot;]%.content
+    %meta[name=&quot;description&quot;]%.content = %meta[name=&quot;description&quot;]%.content
+    %meta[property=&quot;og:title&quot;]%.content = %meta[property=&quot;og:title&quot;]%.content
+    %meta[property=&quot;og:description&quot;]%.content = %meta[property=&quot;og:description&quot;]%.content
+</code></pre>
+<p>Result:</p>
+<pre><code class="language-html">&lt;head&gt;
+    &lt;title&gt;
+        مترجم ومحرر للترجمات أونلاين لأكثر من 80 لغة | مايسترا
+    &lt;/title&gt;
+    &lt;meta name=&quot;description&quot;
+        content=&quot;قم بإنشاء وتعديل وترجمة الترجمة عبر الإنترنت باستخدام محرر الترجمة المخصص من مايسترا. وسّع نطاق وصولك من خلال ترجمة ترجماتك إلى أكثر من 80 لغة.&quot; /&gt;
+    &lt;!-- Facebook Tags --&gt;
+    &lt;meta property=&quot;og:title&quot; content=&quot;مترجم ومحرر للترجمات أونلاين لأكثر من 80 لغة | مايسترا&quot; /&gt;
+    &lt;meta property=&quot;og:description&quot;
+        content=&quot;قم بإنشاء وتعديل وترجمة الترجمة عبر الإنترنت باستخدام محرر الترجمة المخصص من مايسترا. وسّع نطاق وصولك من خلال ترجمة ترجماتك إلى أكثر من 80 لغة.&quot; /&gt;
+    &lt;meta property=&quot;og:url&quot; content=&quot;https://maestra.ai/tools/subtitle-translator&quot; /&gt;
+    &lt;link rel=&quot;canonical&quot; href=&quot;https://maestra.ai/tools/subtitle-translator&quot; /&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/template/css/reset.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/template/css/fonts.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/template/css/style.css&quot;&gt;
+&lt;/head&gt;
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.4.3
+Build Date UTC : 2023-06-08 15:59:31.464143+00:00
+-->

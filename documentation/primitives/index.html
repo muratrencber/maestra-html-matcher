@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Primitives - Maestra HTML Matcher Documentation</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Maestra HTML Matcher Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Quick Start</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../instructions/" class="nav-link">Manipulations</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Primitives</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../instructions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#primitives" class="nav-link">Primitives</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#css-selectors" class="nav-link">CSS Selectors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dictionary-items" class="nav-link">Dictionary Items</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#formatted-strings" class="nav-link">Formatted Strings</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="primitives">Primitives</h1>
+<p>Basic building blocks.</p>
+<h2 id="css-selectors">CSS Selectors</h2>
+<p>To access any HTML element, the matcher uses CSS selectors.</p>
+<p>To declare a selector, you have to enclose it with % signs:</p>
+<p><code>%&lt;CSS selector string&gt;%</code></p>
+<p>Examples:</p>
+<p><code>%div[id="hero-home"]%</code></p>
+<p><code>%div.btn-box span strong%</code></p>
+<p><code>%img:nth-child(4)%</code></p>
+<h3 id="selecting-attributes">Selecting Attributes</h3>
+<p>It is possible to select attributes of the element also. Note that only available attributes at the time being are <code>alt</code>, <code>content</code>, <code>lang</code>, <code>href</code>, <code>src</code>, <code>data-src</code>.</p>
+<p>Basic syntax:</p>
+<p><code>%&lt;CSS selector string&gt;%.&lt;attribute&gt;</code></p>
+<p>Examples:</p>
+<p><code>%img%.alt</code></p>
+<p><code>%html%.lang</code></p>
+<h4 id="special-attributes">Special Attributes</h4>
+<p>There are two special attributes -which are actually not attributes- which can be specified with the dot operator: <code>innerHTML</code> and <code>text</code>. By default, if you don't specify any attribute the matcher assumes <code>innerHTML</code> is targeted. <code>innerHTML</code> selects the entire inner HTML content of the element, while the <code>text</code> attribute selects only the text.</p>
+<p>Examples:</p>
+<p><code>%p%</code> is equivalent to <code>%p%.innerHTML</code></p>
+<p><code>%div div p%.text</code></p>
+<h3 id="selecting-multiple-elements">Selecting Multiple Elements</h3>
+<p>By default, this declarations selects the first element that fits the specifications. However, you can use indexing or slicing to operate on multiple items:</p>
+<p><code>%div#hero-home%[4]</code>: Selects the 5th element</p>
+<p><code>%p.bold%[:4]</code>: Selects the elements from index 0 to 3</p>
+<p><code>%img%[-1]</code>: Selects the last element</p>
+<h3 id="combining-all">Combining All</h3>
+<p><code>%ul li%[:4].text</code>: Selects the text content of first 4 <code>li</code> elements which are the children of an <code>ul</code>.</p>
+<p><code>%img%[-1].alt</code>: Selects the <code>alt</code> attribute of the last <code>img</code> element</p>
+<h2 id="dictionary-items">Dictionary Items</h2>
+<p>Matcher preserves a dictionary for some specific operations.</p>
+<p>Basic Syntax:</p>
+<p><code>{root.child.child-of-child.child-of-child-of-child}</code></p>
+<p>Example:</p>
+<p>Let our dictionary be:</p>
+<pre><code class="language-json">&quot;environ&quot;: {
+    &quot;lang&quot;:&quot;ar&quot;
+},
+&quot;breadcrumbs&quot;: {
+    &quot;home&quot;:{
+        &quot;path&quot;:&quot;ar&quot;,
+        &quot;display&quot;:&quot;الصفحة الرئيسية&quot;
+    },
+    &quot;tools&quot;:{
+        &quot;path&quot;:&quot;ar/tools&quot;,
+        &quot;display&quot;:&quot;أدوات&quot;
+    }
+}
+</code></pre>
+<p><code>{environ.lang}</code> returns <code>ar</code></p>
+<p><code>{breadcrumbs.tools.path}</code> returns <code>ar/tools</code></p>
+<h2 id="formatted-strings">Formatted Strings</h2>
+<p>Basic syntax:</p>
+<p><code>f"some literal string and some {dictionary.item} combined together!"</code></p>
+<p>Examples (with the previously specified dictionary):</p>
+<p><code>f"https://maestra.ai/{breadcrumbs.tools.path}"</code> returns <code>https://maestra.ai/ar/tools</code></p>
+<p><code>f"Current language code: {environ.lang}"</code> return <code>Current language code: ar</code></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
