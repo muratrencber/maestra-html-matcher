@@ -3,3 +3,4 @@
     %meta[name="description"]%.content = %meta[name="description"]%.content
     %meta[property="og:title"]%.content = %meta[property="og:title"]%.content
     %meta[property="og:description"]%.content = %meta[property="og:description"]%.content
+    if({environ.lang}=="ar") +<link href="/assets/template/css/rtl.css" rel="stylesheet" />+
