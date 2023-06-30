@@ -4,8 +4,6 @@ CHILDREN
 
 	InstructionType.ASSIGN - CSSSelector: %meta[name="description"]% - CSSSelector: %meta[name="description"]%
 
-	InstructionType.ASSIGN - CSSSelector: %meta[name="description"]% - CSSSelector: %meta[name="description"]%
-
 	InstructionType.ASSIGN - CSSSelector: %meta[property="og:title"]% - CSSSelector: %meta[property="og:title"]%
 
 	InstructionType.ASSIGN - CSSSelector: %meta[property="og:description"]% - CSSSelector: %meta[property="og:description"]%
@@ -118,9 +116,94 @@ CHILDREN
 		CHILDREN
 			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - {environ.lang}
 
-			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - <insobjects.FormattedLiteral object at 0x000001B5BD4CF040>
+			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - <insobjects.FormattedLiteral object at 0x000001E44C5B5FA0>
 
-			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - <insobjects.FormattedLiteral object at 0x000001B5BD4CF280>
+			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - <insobjects.FormattedLiteral object at 0x000001E44A204C40>
+
+			InstructionType.ASSIGN - CSSSelector: %span.active-lang% - {name}
+		CHILDRENEND
+	CHILDRENEND
+CHILDRENEND
+
+InstructionType.CONTEXT_CHANGE - CSSSelector: %body > footer% - CSSSelector: %footer#footer-main%
+CHILDREN
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %#hook-cta% - CSSSelector: %div[class="row justify-content-center"]%
+	CHILDREN
+		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h3%
+
+		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
+
+		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+	CHILDRENEND
+
+	InstructionType.ASSIGN - CSSSelector: %div.fb-copy p% - {footer.copy_text}
+
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %div.main-footer.fullsize% - CSSSelector: %div[class="row pt-md align-items-center justify-content-center"]%
+	CHILDREN
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div.ms-col% - CSSSelector: %div.col-lg-4.mb-5.mb-lg-0%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span.ms-name% - CSSSelector: %h5%
+
+			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+		CHILDRENEND
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="footer-col"]% - CSSSelector: %div[class="row pt-md align-items-center justify-content-center"] > div%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h6%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - {footer.subtitle_translator}
+
+			InstructionType.ASSIGN - CSSSelector: %a% - {footer.transcribe_youtube}
+
+			InstructionType.ASSIGN - CSSSelector: %a% - {footer.srt_generator}
+		CHILDRENEND
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="footer-col"]% - CSSSelector: %div[class="row pt-md align-items-center justify-content-center"] >div%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h6%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+		CHILDRENEND
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="footer-col"]% - CSSSelector: %div[class="row pt-md align-items-center justify-content-center"] >div%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h6%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - {footer.transcribe_arabic}
+
+			InstructionType.ASSIGN - CSSSelector: %a% - {footer.transcribe_spanish}
+
+			InstructionType.ASSIGN - CSSSelector: %a% - {footer.transcribe_french}
+		CHILDRENEND
+	CHILDRENEND
+
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="footer-bottom fullsize"]% - CSSSelector: %div[class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0"]%
+	CHILDREN
+		InstructionType.ASSIGN - CSSSelector: %ul li a% - CSSSelector: %div[class="col-md-6"] li[class="nav-item"] a%
+
+		InstructionType.ASSIGN - CSSSelector: %ul li a% - CSSSelector: %div[class="col-md-6"] li[class="nav-item"] a%
+
+		InstructionType.ASSIGN - CSSSelector: %ul li a% - CSSSelector: %div[class="col-md-6"] li[class="nav-item"] a%
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %li.fb-lang% - CSSSelector: %%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - {environ.lang}
+
+			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - <insobjects.FormattedLiteral object at 0x000001E44C5D9310>
+
+			InstructionType.ASSIGN - CSSSelector: %span.active-lang img% - <insobjects.FormattedLiteral object at 0x000001E44C5D9610>
 
 			InstructionType.ASSIGN - CSSSelector: %span.active-lang% - {name}
 		CHILDRENEND
@@ -133,20 +216,24 @@ InstructionType.CONTEXT_CHANGE - CSSSelector: %body > main% - CSSSelector: %body
 CHILDREN
 	InstructionType.CONTEXT_CHANGE - CSSSelector: %ul[class="breadcrumb-row container"]% - CSSSelector: %%
 	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %a% - <insobjects.FormattedLiteral object at 0x000001B5BD4CF940>
+		InstructionType.ASSIGN - CSSSelector: %a% - <insobjects.FormattedLiteral object at 0x000001E44C5D9CD0>
 
 		InstructionType.ASSIGN - CSSSelector: %a% - {breadcrumbs.home.display}
 
-		InstructionType.ASSIGN - CSSSelector: %a% - <insobjects.FormattedLiteral object at 0x000001B5BD4CFCA0>
+		InstructionType.ASSIGN - CSSSelector: %a% - <insobjects.FormattedLiteral object at 0x000001E44A208070>
 
 		InstructionType.ASSIGN - CSSSelector: %a% - {breadcrumbs.tools.display}
 
-		InstructionType.ASSIGN - CSSSelector: %li% - {breadcrumbs.video-dubber.display}
+		InstructionType.ASSIGN - CSSSelector: %a% - <insobjects.FormattedLiteral object at 0x000001E44A2083D0>
+
+		InstructionType.ASSIGN - CSSSelector: %a% - {breadcrumbs.video-to-text.display}
+
+		InstructionType.ASSIGN - CSSSelector: %li% - {breadcrumbs.convert-mp4-to-text.display}
 	CHILDRENEND
 
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="dt-sec fullsize"]% - CSSSelector: %div[class="col-lg-10 text-center"]%
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="hero-home-in container"]% - CSSSelector: %div[class="col-lg-8 text-center"]%
 	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %h1% - CSSSelector: %h1 strong%
+		InstructionType.ASSIGN - CSSSelector: %h1% - CSSSelector: %h1%
 
 		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h2%
 
@@ -155,33 +242,21 @@ CHILDREN
 		InstructionType.ASSIGN - CSSSelector: %a% - {button_text}
 
 		InstructionType.ASSIGN - CSSSelector: %p[class="requirements-notice"]% - {notice_text}
-
-		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="hero-video video-holder fullsize"]% - CSSSelector: %div[class="col-md-12 row"]%
-		CHILDREN
-			InstructionType.CONTEXT_CHANGE - CSSSelector: %div:nth-child(1)% - CSSSelector: %div[class="col-md-6 comp-element"]:nth-child(1)%
-			CHILDREN
-				InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h2%
-
-				InstructionType.ASSIGN - CSSSelector: %video% - CSSSelector: %video%
-			CHILDRENEND
-
-			InstructionType.CONTEXT_CHANGE - CSSSelector: %div:nth-child(2)% - CSSSelector: %div[class="col-md-6 comp-element"]:nth-child(2)%
-			CHILDREN
-				InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h2%
-
-				InstructionType.ASSIGN - CSSSelector: %video% - CSSSelector: %div video%
-
-				InstructionType.ASSIGN - CSSSelector: %div[class="flag-trigger-holder fullsize"]% - CSSSelector: %div:nth-child(3)%
-			CHILDRENEND
-		CHILDRENEND
 	CHILDRENEND
 
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="sub-video-steps general-flex fullsize"]% - CSSSelector: %div[class="card p-3 col-lg-12"]%
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %div.inner-card-v% - CSSSelector: %div[class="row align-items-center font-weight-600 text-center"]%
 	CHILDREN
-		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="sub-video-card"]% - CSSSelector: %div[class="col-lg-12 hover-translate-y-n3 hover-shadow-lg p-3 d-flex flex-lg-row flex-column"]%
-		CHILDREN
-			InstructionType.ASSIGN - CSSSelector: %img% - CSSSelector: %div[class="col-lg-4"] > img%
+		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h4%
 
+		InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h5%
+
+		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
+	CHILDRENEND
+
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %section#tr-gridbox% - CSSSelector: %div[class="container position-relative row mx-auto mb-6"]%
+	CHILDREN
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div.tr-g-box% - CSSSelector: %div.card-body%
+		CHILDREN
 			InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h5%
 
 			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
@@ -193,121 +268,76 @@ CHILDREN
 		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h2%
 
 		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %span%
 	CHILDRENEND
 
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %section[id="widen-audience"] > div% - CSSSelector: %div[class="row justify-content-center text-center"] > div%
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %div.howto-inner% - CSSSelector: %div[class="container card p-4 col-lg-6 justify-content-center align-items-center"]%
 	CHILDREN
 		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h2%
 
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div.stp-row.fullsize% - CSSSelector: %div.row.align-items-center.p-3.mb-2%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h5%
+
+			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %span%
+		CHILDRENEND
+
+		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a strong%
 	CHILDRENEND
 
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %section[id="time-saving"]% - CSSSelector: %div[class="pr-md-4"]%
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %section#faq-section% - CSSSelector: %div.container.my-6%
 	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %span%
+		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h2%
 
-		InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h3%
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div.faq-row% - CSSSelector: %div.card%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h5%
 
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN - CSSSelector: %li% - CSSSelector: %span%
+			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
+		CHILDRENEND
 	CHILDRENEND
 
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %section[id="time-saving"]% - CSSSelector: %div[class="col-lg-7 order-lg-1 perspective-left hover-scale-111"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %img% - CSSSelector: %img%
-	CHILDRENEND
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %section[id="ms-embed-player"]% - CSSSelector: %div[class="pr-md-4"]%
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %section#testimonial% - CSSSelector: %section[class="slice slice-lg pt-2"]%
 	CHILDREN
 		InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %span%
 
 		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h5%
 
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN_REVERSE - CSSSelector: %p img% - CSSSelector: %p img%
-
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %strong%
-	CHILDRENEND
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[id="embed"]% - CSSSelector: %div[id="embed"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %img% - CSSSelector: %img%
-	CHILDRENEND
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="lang-details half-size"]% - CSSSelector: %div[class="pr-md-4"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h3%
-
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h3%
-
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
-
-		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %strong%
-	CHILDRENEND
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="lang-pack"]% - CSSSelector: %div[class="col-xl-5 col-lg-5 order-lg-1"] div[class="card-body"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h6 span%
-
-		InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h6 strong%
-
-		InstructionType.ASSIGN - CSSSelector: %ul li a% - CSSSelector: %div[class="col-6 pl-0"] p a%
-
-		InstructionType.ASSIGN - CSSSelector: %a[class="lang-all"]% - CSSSelector: %div[class="col-6 pl-0"] > a%
-	CHILDRENEND
-
-	InstructionType.ASSIGN - CSSSelector: %section[id="generate-sub"] > h2% - CSSSelector: %h1[class="mb-4 text-white h2"]%
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="ta-box solid-half"]% - CSSSelector: %div[class="p-3 d-flex"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %span%
-
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-	CHILDRENEND
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %section[id="generate-sub-2"]% - CSSSelector: %section[class="slice slice-lg bg-dark"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h2%
-
-		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="add-info"]% - CSSSelector: %div[class="mt-5 text-center"]%
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div.rating-card% - CSSSelector: %div[class="col-xl-2 col-lg-4 col-sm-6"]%
 		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span.rating-overall% - CSSSelector: %h5%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+		CHILDRENEND
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="rating-card"]% - CSSSelector: %div[class="col-xl-3 col-lg-4 col-sm-6"]%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h5%
+
+			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
+
+			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
+		CHILDRENEND
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="rating-card"]% - CSSSelector: %div[class="col-xl-3 col-lg-4 col-sm-6"]%
+		CHILDREN
+			InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %h5%
+
 			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
 
 			InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %a%
 		CHILDRENEND
 	CHILDRENEND
 
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="step-no-item flex-box-holder"]% - CSSSelector: %div[class="media align-items-center"]%
+	InstructionType.CONTEXT_CHANGE - CSSSelector: %aside#langs% - CSSSelector: %section[class="slice slice-lg"]%
 	CHILDREN
-		InstructionType.CONTEXT_CHANGE - CSSSelector: %div[class="stp-dt"]% - CSSSelector: %div[class="media-body"]%
+		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h4%
+
+		InstructionType.CONTEXT_CHANGE - CSSSelector: %div.half-size% - CSSSelector: %ul%
 		CHILDREN
-			InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %h6%
+			InstructionType.ASSIGN - CSSSelector: %h3% - CSSSelector: %li%
 
-			InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %span%
+			InstructionType.ASSIGN - CSSSelector: %li a% - CSSSelector: %li a%
 		CHILDRENEND
-	CHILDRENEND
-
-	InstructionType.CONTEXT_CHANGE - CSSSelector: %section[id="all-in-one"] > div > div div[class="dt-sec half-size"]% - CSSSelector: %div[class="container position-relative zindex-100 px-5"] > div div[class="col-lg-6 offset-xl-0"]%
-	CHILDREN
-		InstructionType.ASSIGN - CSSSelector: %span% - CSSSelector: %span%
-
-		InstructionType.ASSIGN - CSSSelector: %h2% - CSSSelector: %h3%
-
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
-
-		InstructionType.ASSIGN - CSSSelector: %a% - CSSSelector: %strong%
-
-		InstructionType.ASSIGN - CSSSelector: %p% - CSSSelector: %p%
 	CHILDRENEND
 CHILDRENEND
 

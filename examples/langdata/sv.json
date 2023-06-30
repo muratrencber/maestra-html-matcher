@@ -1,33 +1,53 @@
 {
-    "name": "Svenska",
-    "flag": "se",
-    "button_text":"Bläddra bland filer",
-    "notice_text":"*Inget kreditkort eller konto krävs",
-    "breadcrumbs":{
-        "home":{
-            "path":"sv",
-            "display":"Hemsida"
-        },
-        "tools":{
-            "path":"sv/verktyg",
-            "display":"Verktyg"
-        },
-        "video-dubber":{
-            "path":"sv/verktyg/video-dubber",
-            "display":"Video Dubber"
-        },
-        "subtitle-translator":{
-            "path":"sv/verktyg/undertext-oversattare",
-            "display":"Undertextöversättare"
-        }
+  "name": "Svenska",
+  "flag": "se",
+  "button_text": "Bläddra bland filer",
+  "notice_text": "*Inget kreditkort eller konto krävs",
+  "breadcrumbs": {
+    "home": {
+      "path": "sv",
+      "display": "Hemsida"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. Kopiering förbjuden. ",
-        "subtitle_translator": "Undertextöversättare" ,
-        "transcribe_youtube":  "Transkribera YouTube-video" ,
-        "srt_generator":       "SRT-generator" ,
-        "transcribe_arabic":   "Transkribera arabiska" ,
-        "transcribe_spanish":  "Transkribera spanska" ,
-        "transcribe_french":   "Transkribera franska"
+    "tools": {
+      "path": "sv/verktyg",
+      "display": "Verktyg"
+    },
+    "video-dubber": {
+      "path": "sv/verktyg/video-dubber",
+      "display": "Video Dubber"
+    },
+    "subtitle-translator": {
+      "path": "sv/verktyg/undertext-oversattare",
+      "display": "Undertextöversättare"
+    },
+    "audio-to-text": {
+      "path": "sv/verktyg/audio-to-text",
+      "display": "Ljud till Text"
+    },
+    "video-translator": {
+      "path": "sv/verktyg/video-translator",
+      "display": "Videoöversättare"
+    },
+    "convert-mp3-to-text": {
+      "path": "sv/verktyg/audio-to-text/convert-mp3-to-text",
+      "display": "Konvertera MP3 till text"
+    },
+    "video-to-text": {
+      "path": "sv/verktyg/video-to-text",
+      "display": "video till text"
+    },
+    "convert-mp4-to-text": {
+      "path": "sv/verktyg/video-to-text/convert-mp4-to-text",
+      "display": "konvertera mp4 till text"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. Kopiering förbjuden. ",
+    "subtitle_translator": "Undertextöversättare",
+    "transcribe_youtube": "Transkribera YouTube-video",
+    "srt_generator": "SRT-generator",
+    "transcribe_arabic": "Transkribera arabiska",
+    "transcribe_spanish": "Transkribera spanska",
+    "transcribe_french": "Transkribera franska"
+  }
 }

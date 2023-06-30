@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- anti-flicker snippet (recommended)  -->
+    <style>
+        .async-hide {
+            opacity: 0 !important;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noodp,noydir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="Connect with audiences around the globe and make your content more accessible. Automatically translate your videos to more than 80 languages." />
+    <meta name="author" content="Maestra" />
+    <!-- Facebook Tags -->
+    <meta property="og:title" content="Online Video Translator with AI Powered Voices - Maestra" />
+    <meta property="og:description"
+        content="Connect with audiences around the globe and make your content more accessible. Automatically translate your videos to more than 80 languages." />
+    <meta property="og:image" content="https://maestrasuite.com/assets/template/og/fb.png" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maestrasuite.com/video-translator-online" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#1a232d">
+    <link rel="canonical" href="https://maestrasuite.com/video-translator-online" />
+    <!-- <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5LRMW72"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133545807-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-133545807-1");
+        gtag("config", "AW-776917314");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WSDTWX8");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Organization",
+				"name": "Maestra",
+				"url": "https://maestrasuite.com/",
+				"logo": "https://maestrasuite.com/assets/template/template/img/svg/icons/navLogoDark.svg",
+				"sameAs": [
+					"https://www.facebook.com/MaestraSuite/",
+					"https://twitter.com/maestrasuite",
+					"https://www.linkedin.com/company/maestrasuite"
+				]
+			}
+		</script>
+    <title>
+        AI音声搭載のオンライン動画翻訳ツール - Maestra
+    </title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/template/img/brand/favicon.png" type="image/png">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="../assets/template/css/maestra.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
+        aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        当ウェブサイトのテーマが機能する為にクッキーを使用しています。当社のウェブサイトを利用することにより、お客様はクッキーの使用に同意したものとみなされます。
+                    </p>
+                    <!-- Buttons -->
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header-transparent" id="header-main">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
+            <div class="container" id="navbarDIV">
+                <script src="../assets/template/js/refer.js"></script>
+                <!-- Brand -->
+                <a class="navbar-brand" href="https://maestrasuite.com">
+                    <img alt="Maestra" src="../assets/template/img/svg/icons/navLogo.svg" id="navbar-logo"
+                        style="height: 2.3rem; margin-top: -4px;">
+                </a>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+                    aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse navbar-collapse-overlay" id="navbar-main-collapse">
+                    <!-- Collapse header  -->
+                    <div class="collapse-header align-items-center">
+                        <div class="col-6">
+                            <a class="navbar-brand" href="https://maestrasuite.com">
+                                <img alt="Maestra" src="../assets/template/img/svg/icons/navLogo.svg">
+                            </a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <!-- Toggler -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Services</a>
+                            <div class="dropdown-menu dropdown-menu-lg p-0">
+                                <div class="list-group list-group-flush">
+                                    <a href="https://maestra.ai/tools/audio-to-text/"
+                                        class="list-group-item list-group-item-action border-bottom" role="button">
+                                        <div class="media d-flex align-items-center">
+                                            <!-- SVG icon -->
+                                            <figure style="width: 50px;">
+                                                <img alt="" src="../assets/template/img/svg/icons/DOC_File.svg"
+                                                    class="img-fluid" style="width: 40px;">
+                                            </figure>
+                                            <!-- Media body -->
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0">文字起こし</h6>
+                                                <small class="text-sm">音声や動画ファイルからテキストへ自動変換</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://maestra.ai/tools/subtitle-generator"
+                                        class="list-group-item list-group-item-action" role="button">
+                                        <div class="media d-flex align-items-center">
+                                            <!-- SVG icon -->
+                                            <figure style="width: 50px;">
+                                                <img alt="" src="../assets/template/img/svg/icons/Desktop_2.svg"
+                                                    class="img-fluid" style="width: 40px;">
+                                            </figure>
+                                            <!-- Media body -->
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0">字幕/キャプション</h6>
+                                                <small class="text-sm">動画に自動で母国語や外国語のキャプションを追加</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://maestra.ai/tools/video-dubber/"
+                                        class="list-group-item list-group-item-action" role="button">
+                                        <div class="media d-flex align-items-center">
+                                            <!-- SVG icon -->
+                                            <figure style="width: 50px;">
+                                                <img alt="" src="../assets/template/img/svg/icons/Chat.svg"
+                                                    class="img-fluid" style="width: 40px;">
+                                            </figure>
+                                            <!-- Media body -->
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0">ボイスオーバー</h6>
+                                                <small class="text-sm">動画に自動で外国語のボイスオーバーを追加・編集</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-links rounded-bottom delimiter-top p-4">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <a href="#how-it-works" class="dropdown-item" data-scroll-to=""
+                                                data-scroll-to-offset="50">仕組み</a>
+                                            <a href="#maestra-cloud" class="dropdown-item" data-scroll-to=""
+                                                data-scroll-to-offset="50">MaestraCloud</a>
+                                            <a href="https://maestra.ai/tools/audio-to-text/" class="dropdown-item"
+                                                data-scroll-to="" data-scroll-to-offset="50">音声からテキスト</a>
+                                            <a href="https://maestra.ai/tools/video-to-text/" class="dropdown-item"
+                                                data-scroll-to="" data-scroll-to-offset="50">動画からテキスト</a>
+                                            <a href="https://maestra.ai/tools/subtitle-translator" class="dropdown-item"
+                                                data-scroll-to="" data-scroll-to-offset="50">字幕翻訳ツール</a>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="#languages" class="dropdown-item" data-scroll-to=""
+                                                data-scroll-to-offset="50">言語</a>
+                                            <a href="https://maestra.ai/pricing" class="dropdown-item" data-scroll-to=""
+                                                data-scroll-to-offset="50">価格</a>
+                                            <a href="https://maestra.ai/tools/video-to-text/youtube-transcript-generator"
+                                                class="dropdown-item" data-scroll-to=""
+                                                data-scroll-to-offset="50">YouTuber向け</a>
+                                            <a href="https://maestra.ai/tools/subtitle-generator" class="dropdown-item"
+                                                data-scroll-to="" data-scroll-to-offset="50">動画に字幕を追加</a>
+                                            <a href="https://maestra.ai/tools/podcast-transcript-generator"
+                                                class="dropdown-item" data-scroll-to=""
+                                                data-scroll-to-offset="50">ポッドキャスト文字起こし生成ツール</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://maestra.ai/blogs">ブログ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="https://maestrasuite.com/pricing" data-scroll-to=""
+                                data-scroll-to-offset="50">価格</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://maestrahelp.zendesk.com/">よくある質問</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://maestra.ai/contact">コンタクト</a>
+                        </li>
+                    </ul>
+                    <!-- Right navigation -->
+                    <ul class="navbar-nav align-items-lg-center d-none d-lg-flex ml-lg-auto">
+                        <!-- Auth -->
+                        <li class="nav-item">
+                            <a class="nav-link" style="padding-left: 0px; padding-right: 0px;"
+                                href="https://app.maestrasuite.com/login">
+                                ログイン
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dl-link" href="https://maestrasuite.com/book-a-demo"
+                                style="padding-left: 5px; padding-right: 5px;">
+                                デモを依頼する
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Desktop Button -->
+                            <a class="btn btn-sm d-none d-lg-inline-block btn-warning ml-auto dl-link" id="down-link"
+                                href="https://app.maestrasuite.com/signup" onclick="bingDownload();" target="_blank">
+                                無料で始める
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <section class="slice py-6 pt-lg-7 pb-lg-0 bg-section-dark">
+        <div class="container pt-4 pt-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="row align-items-center justify-content-center mb-2">
+                        <img alt="maestra logo" src="../assets/template/img/brand/logo-circle.svg" class="svg-inject"
+                            style="height: 100px; width: 100px;">
+                    </div>
+                    <h1 class="display-4 text-white mb-0">
+                        オンライン動画翻訳ツール
+                    </h1>
+                    <p class="lh-160 my-4 text-white opacity-8">
+                        世界中の視聴者とつながり、コンテンツをより身近なものにします。Maestraの豊富な言語ライブラリと即時翻訳機能は、企業とクリエイター双方の仕事とコミュニケーションの効率化に貢献します。動画を自動的に50ヶ国語以上に翻訳します。わずかな時間で文字起こしを行い、すぐに編集して書き出せます！
+                    </p>
+                    <div class="text-center my-5" id="howitworks">
+                        <div class="container">
+                            <!-- <div style="padding-bottom: 0px;">
+                                <h2>
+                                    See Video Dubber In Action
+                                </h2>
+                            </div> -->
+                            <div class="comp-container row" style="justify-content: center;">
+                                <div class="col-md-12 row" style="padding-left: 10px; padding-right: 10px;">
+                                    <div class="col-md-6 comp-element">
+                                        <h2>オリジナル言語</h2>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video class="embed-responsive-item" controls preload="none"
+                                                poster="assets/template/img/screenshots/original_cl.jpg">
+                                                <source
+                                                    src="https://firebasestorage.googleapis.com/v0/b/maestra-website.appspot.com/o/cosmos_original.mp4?alt=media&token=7194d7b5-2da3-49cf-899d-c88b0347b24f"
+                                                    type="video/mp4" />
+                                                <audio id="audio1">
+                                                    <source src="../assets/template/audios/es.mp3" type="audio/mpeg" />
+                                                </audio>
+                                                <audio id="audio2" muted>
+                                                    <source src="../assets/template/audios/en.mp3" type="audio/mpeg" />
+                                                </audio>
+                                                <audio id="audio3" muted>
+                                                    <source src="../assets/template/audios/it.mp3" type="audio/mpeg" />
+                                                </audio>
+                                                <audio id="audio4" muted>
+                                                    <source src="../assets/template/audios/ge.mp3" type="audio/mpeg" />
+                                                </audio>
+                                                <audio id="audio5" muted>
+                                                    <source src="../assets/template/audios/fr.mp3" type="audio/mpeg" />
+                                                </audio>
+                                                お使いのブラウザはこの動画に対応していません。
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 comp-element">
+                                        <h2>目標言語</h2>
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video onloadstart="this.volume=0.2" class="embed-responsive-item"
+                                                id="video" controls preload="none"
+                                                poster="assets/template/img/screenshots/original_cl.jpg" muted>
+                                                <source
+                                                    src="https://firebasestorage.googleapis.com/v0/b/maestra-website.appspot.com/o/cosmos_original.mp4?alt=media&token=7194d7b5-2da3-49cf-899d-c88b0347b24f"
+                                                    type="video/mp4" />
+                                                <track label="Spanish" kind="subtitles" srclang="es"
+                                                    src="../assets/template/subtitles/cosmos_es.vtt" default />
+                                                <track label="English" kind="subtitles" srclang="en"
+                                                    src="../assets/template/subtitles/cosmos_en.vtt" />
+                                                <track label="French" kind="subtitles" srclang="fr"
+                                                    src="../assets/template/subtitles/cosmos_fr.vtt" />
+                                                <track label="German" kind="subtitles" srclang="ge"
+                                                    src="../assets/template/subtitles/cosmos_ge.vtt" />
+                                                <track label="Italian" kind="subtitles" srclang="it"
+                                                    src="../assets/template/subtitles/cosmos_it.vtt" />
+                                                お使いのブラウザはこの動画に対応していません。
+                                            </video>
+                                        </div>
+                                        <div style="
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    margin: 0 10px;
+                                                    margin-top: 15px;
+                                                ">
+                                            <div id="es" class="lang-button" style="background-color: #dedede;">
+                                                <a onclick="selectLanguage('es');" class="video-language-button">
+                                                    <img class="img-responsive"
+                                                        src="../assets/template/img/flags/spanish.svg" alt="Features" />
+                                                    <p>
+                                                        スペイン語
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div id="en" class="lang-button">
+                                                <a onclick="selectLanguage('en');" class="video-language-button">
+                                                    <img class="img-responsive"
+                                                        src="../assets/template/img/flags/english.png" alt="Features" />
+                                                    <p>
+                                                        英語
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div id="fr" class="lang-button">
+                                                <a onclick="selectLanguage('fr');" class="video-language-button">
+                                                    <img class="img-responsive"
+                                                        src="../assets/template/img/flags/french.svg" alt="Features" />
+                                                    <p>
+                                                        フランス語
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div id="ge" class="lang-button">
+                                                <a onclick="selectLanguage('ge');" class="video-language-button">
+                                                    <img class="img-responsive"
+                                                        src="../assets/template/img/flags/german.svg" alt="Features" />
+                                                    <p>
+                                                        ドイツ語
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div id="it" class="lang-button">
+                                                <a onclick="selectLanguage('it');" class="video-language-button">
+                                                    <img class="img-responsive"
+                                                        src="../assets/template/img/flags/italian.svg" alt="Features" />
+                                                    <p>
+                                                        イタリア語
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <a href="https://app.maestra.ai/signup" class="btn btn-primary btn-icon" target="_blank">
+                            <span class="btn-inner--text">無料で始める &nbsp;➜</span>
+                        </a>
+                        <a class="btn btn-light" href="https://maestrasuite.com/book-a-demo" data-fancybox>デモを依頼する</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-6 mb-n10 position-relative zindex-100">
+                <div class="col-lg-6 col-sm-6">
+                    <div class="card border-0">
+                        <figure class="figure">
+                            <img alt="maestra screenshot 1" src="../assets/template/img/screenshots/subtitle-editor.png"
+                                class="card-img"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 10px; ">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <div class="card border-0">
+                        <figure class="figure">
+                            <img alt="maestra screenshot 2" src="../assets/template/img/screenshots/home-list.png"
+                                class="card-img"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 10px; ">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice mt-lg-5">
+        <div class="container position-relative zindex-100 mt-4 mt-lg-6">
+            <div>
+                <div class="card p-3 col-lg-12" style="flex-direction: row; flex-wrap: wrap; margin-bottom: 0px;">
+                    <div class="col-lg-12 hover-translate-y-n3 hover-shadow-lg p-3 d-flex flex-lg-row flex-column"
+                        style="border-radius: 1.3rem;">
+                        <div class="col-lg-4">
+                            <img alt="Upload and move on to video localization"
+                                src="../assets/template/img/screenshots/upload-modal.png" class="img-fluid"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 10px; width: 100%" />
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="pt-3">
+                                <h3 class="h5" style="text-align: left;">
+                                    <span style="color: #ffb117; font-size: 23px; font-weight: 600;">1</span>
+                                    Maestraへアップロード
+                                </h3>
+                            </div>
+                            <div class="pb-3">
+                                <p class="text-muted mb-0">
+                                    Maestraの翻訳ソフトは、さまざまなメディアに適用することができます。オンラインクライアントから簡単にアカウントにサインインし、プログラムをダウンロードすることなく、プロジェクトに取り組むことができます。
+                                </p>
+                                <p class="text-muted mb-0">
+                                    アカウントにサインイン後、Maestraでは最大15分間の無料動画処理を提供しています。動画ファイルをアップロード欄にドラッグしてリンクするか、Google
+                                    Drive、Dropbox、Instagramから直接アップロードしてください。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 hover-translate-y-n3 hover-shadow-lg p-3 d-flex flex-lg-row flex-column"
+                        style="border-radius: 1.3rem;">
+                        <div class="col-lg-4">
+                            <img alt="Switch between Maestra video editor with a single click"
+                                src="../assets/template/img/screenshots/editor-switch.png" class="img-fluid"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 10px; width: 100%" />
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="pt-3">
+                                <h3 class="h5" style="text-align: left;">
+                                    <span style="color: #ffb117; font-size: 23px; font-weight: 600;">2</span>
+                                    自動文字起こし、ナレーションと字幕
+                                </h3>
+                            </div>
+                            <div class="pb-3">
+                                <p class="text-muted mb-0">
+                                    文字起こしはわずかな時間で完了し、翻訳追加、編集、音声のプレビュー、エクスポートが可能なメインインターフェイスに誘導されます。動画の翻訳は簡単です！ファイルをアップロードするだけで、Maestraが翻訳プロセスをガイドします。コンピュータで生成されたナレーションは、動画と完全に同期されます。音声の種類を選んだり、文章のタイムスタンプを調整したり、お客様の作りたいオンライン動画を完成させることができます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 hover-translate-y-n3 hover-shadow-lg p-3 d-flex flex-lg-row flex-column"
+                        style="border-radius: 1.3rem;">
+                        <div class="col-lg-4">
+                            <img alt="Translate with ease by utilizing maestra video editor"
+                                src="../assets/template/img/screenshots/subtitle-export.png" class="img-fluid"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 10px; width: 100%" />
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="pt-3">
+                                <h3 class="h5" style="text-align: left;">
+                                    <span style="color: #ffb117; font-size: 23px; font-weight: 600;">3</span>
+                                    動画をオンラインで編集・プレビュー
+                                </h3>
+                            </div>
+                            <div class="pb-3">
+                                <p class="text-muted mb-0">
+                                    動画翻訳をわずかな時間で完了させた後、メインインターフェースでは、Maestraの高度な編集ツールにより、テキストファイルの編集が可能です。行の削除や結合、タイムコード変更など、ファイル編集も思いのままです。
+                                </p>
+                                <p class="text-muted mb-0">
+                                    翻訳された動画が完成したら、あらゆるフォーマットで書き出すことができます。同インターフェース上で、「Export」をクリックし、お好みの形式を選択します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN FEATURES SECTION -->
+    <section class="slice bg-section-secondary">
+        <!-- Container -->
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <h2 style="font-size: 40px;
+				background: -webkit-linear-gradient(45deg, #008aff, #2dca8c 80%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;">
+                    さまざまな翻訳の形
+                </h2>
+            </div>
+            <div class="row mx-lg-n5 mt-sm-4 align-items-center">
+                <div class="col-md-5 pl-lg-4 pr-lg-3">
+                    <div class="card bg-primary hover-translate-y-n10 shadow-none border-0">
+                        <div class="card-body">
+                            <div class="row m-0 pb-1 align-items-center">
+                                <div class="icon bg-white icon-shape shadow"
+                                    style="height: 4rem; width: 4rem; border-radius: 1rem">
+                                    <img alt="graph" src="../assets/template/img/svg/icons/DOC_File.svg"
+                                        class="svg-inject" style="height: 40px;">
+                                </div>
+                                <h5 class="text-white ml-3 mb-0">正確な文字起こし</h5>
+                            </div>
+                            <div class="pt-2 pb-3">
+                                <p class="text-white mb-0">
+                                    動画ファイルをMaestraにアップロードすると、自動で文字起こしが行われます。動画の文字おこしには、通常、動画ファイルの半分以下の時間しかかかりません。最先端の動画翻訳ソフトにより、翻訳精度は最大90%に達します。しかし、もし満足のいく結果が得られない場合は、編集で理想の仕上がりに近づけることができます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 pr-lg-4 pl-lg-3">
+                    <div class="card bg-dark hover-translate-y-n10 shadow-none border-0"
+                        style="background-color: #184771 !important">
+                        <div class="card-body">
+                            <div class="row m-0 pb-1 align-items-center">
+                                <div class="icon bg-white icon-shape shadow"
+                                    style="height: 4rem; width: 4rem; border-radius: 1rem">
+                                    <img alt="graph" src="../assets/template/img/svg/icons/Chat.svg" class="svg-inject"
+                                        style="height: 40px;">
+                                </div>
+                                <h5 class="text-white ml-3 mb-0">自動AIナレーション</h5>
+                            </div>
+                            <div class="pt-2 pb-3">
+                                <p class="text-white mb-0">
+                                    コンテンツの文脈を伝えるには、さまざまな方法があります。Maestraは、動画に自動ナレーションを導入することで、世界中のあらゆる選択肢を手に入れることができます。Maestraは、動画音声を翻訳し、30ヶ国語以上でオリジナルの映像に自動的にオーバーレイする吹き替えを生成することができます。この翻訳版の動画は、より見やすく、シームレスに統合されており、理想の視聴体験を提供します。字幕や外国語吹き替えを追加して視聴率を獲得し、内容を充実させる。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-lg-n5 mt-sm-4 align-items-center">
+                <div class="col-md-12 pr-lg-4 pl-lg-4">
+                    <div class="card bg-dark hover-translate-y-n10 shadow-none border-0">
+                        <div class="card-body">
+                            <div class="row m-0 pb-1 align-items-center">
+                                <div class="icon bg-white icon-shape shadow"
+                                    style="height: 4rem; width: 4rem; border-radius: 1rem">
+                                    <img alt="graph" src="../assets/template/img/svg/icons/Desktop_3.svg"
+                                        class="svg-inject" style="height: 40px;">
+                                </div>
+                                <h5 class="text-white ml-3 mb-0">インスタント字幕</h5>
+                            </div>
+                            <div class="pt-2 pb-3">
+                                <p class="text-white mb-0">
+                                    動画の文字起こしを行うだけでなく、オンラインで<a class="text-warning"
+                                        href="https://maestra.ai/tools/subtitle-generator">字幕を自動生成</a>することもできます。翻訳字幕は、動画作品にすぐ追加いただけます。パーソナライズされたコンテンツやされていないコンテンツ、ビジネス翻訳、字幕を付けたい映画など、Maestraの翻訳を使えばわずかな時間で翻訳が完了し、字幕も編集可能な状態になります。Maestraの字幕エディターは、素晴らしい動画編集を実現するための環境を整えてくれます。新しい言語を学んだり、世界中の視聴者に届くように字幕付きのコンテンツを作ったり、字幕を追加したポッドキャストをすぐに作ることができます。
+                                </p>
+                                <p class="text-white mb-0">
+                                    また、Maestraのクラウドサーバー内で翻訳字幕をハードコードすることができるので、膨大な動画エンコード処理のストレスでデバイスが割れることもありません。Maestraでは、さまざまなフォント、フォントサイズ、カラー、さらにカスタムキャプションスタイリングツールを提供しています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice pb-0" id="how-it-works">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-6 col-md-10">
+                <h2 class="mt-0">
+                    Maestraの動画翻訳を選択する理由
+                </h2>
+                <p class="text-muted my-4">
+                    オンライン動画翻訳が必要とされる多くの理由があります。もしコンテンツ制作者なら、より多くの読者にリーチする必要があるかもしれません。あるいは、常に翻訳作業が発生する仕事をしているかもしれません。コンテンツの自動翻訳を行うことで、文章入力の時間が短縮され、作品の完成度に集中することができます。
+                </p>
+            </div>
+        </div>
+
+        <section class="slice delimiter-top mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 mb-lg-0">
+                        <div class="card hover-translate-y-n10 hover-shadow-lg">
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <h5 class="text-primary">動画のローカライゼーション</h5>
+                                    <p class="text-muted mb-0">
+                                        より良い、多言語の動画コンテンツは、より多くの視聴者へ届けることができます。コンテンツ制作者であれば、企業や広告パートナーからの知名度や利益の向上につながります。
+                                    </p>
+                                    <p class="text-muted mb-0">
+                                        Maestraの動画翻訳ツールは、コンテンツを作成する場合、視聴者を広げるために有益であることが証明されます。Maestraによって、非常に簡単にコンテンツをローカライズすることができ、動画を多言語に翻訳することができるようになります。言語の壁を取り払い、世界中の人々がコンテンツにアクセスできるようになります。シンプルな操作で動画翻訳、キャプションの追加、自動ナレーション、文字起こしをわずかな時間で行えます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="card hover-translate-y-n10 hover-shadow-lg mb-lg-0">
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <h5 class="text-success">新しい言語を学ぶ</h5>
+                                    <p class="text-muted mb-0">
+                                        映像ファイルの元言語を翻訳して外国語を学ぶというのは、一般的でないように思われるかもしれません。しかし、言語間でどのように文章が使われているかを比較することができるので、効率的な学習方法といえます。動画を翻訳することで、積極的に動画を視聴し、その言語の文法や語彙から、どのように翻訳が作成されるかを分析します。非ネイティブスピーカーは、私たちのソフトウェアを使用して、動画の文字起こしや字幕を追加することによって、言語スキルを向上させることができます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="card hover-translate-y-n10 hover-shadow-lg">
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <h5 class="text-danger" style="color: #576D7E !important">アクセシビリティ</h5>
+                                    <p class="text-muted mb-0">
+                                        動画コンテンツの視聴の仕方は人によって全く異なります。耳の不自由な方には字幕を、視覚障がい者には自動音声ガイドを提供することで、視聴者の理解をサポートします。Maestraは、単に動画を改善するだけでなく、高度なツールを使って動画をより身近なものにします。わずかな時間で動画を翻訳し、Maestraの自動キャプションとナレーションで、あなたのビジネスは新しいレベルに到達します。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="card hover-translate-y-n10 hover-shadow-lg">
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <h5 class="text-warning">視聴者のエンゲージメント</h5>
+                                    <p class="text-muted mb-0">
+                                        動画を翻訳することで、耳の不自由なの視聴者を含む世界中の視聴者に届けることができます。Maestraにファイルをアップロードするだけで、動画ファイルを自動翻訳し、数クリックで作業を完了することができます。例えば、YouTubeのチャンネルを持っていれば、アップロードセクションに動画をドラッグするだけで、翻訳された字幕を追加できます。わずかな時間で、あなたの動画を他の言語に翻訳できます。50ヶ国語以上からお好きなものをお選びください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="card hover-translate-y-n10 hover-shadow-lg mb-lg-0">
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <h5 class="text-danger" style="color: #ff5c75 !important">グローバルコンテンツへのアクセス</h5>
+                                    <p class="text-muted mb-0">
+                                        Maestraの翻訳機能は、海外の視聴者があなたの動画を見つけられるようにしますが、同時に、海外の膨大なコンテンツライブラリーへのアクセスも可能にします。動画を英語に翻訳することで、教育ツール、新しいブランド、潜在的なパートナー、その他多くの興味深く刺激的なウェブコンテンツを発見することができます。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="card hover-translate-y-n10 hover-shadow-lg mb-lg-0">
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <h5 class="text-warning" style="color: #A066AA !important">より良いビジネス</h5>
+                                    <p class="text-muted mb-0">
+                                        映像の翻訳ができると、ビジネスに大きなインパクトを与えることができます。専任翻訳者に頼らなくても、海外のパートナーとの会議、メモ、その他の視覚的な資料やツールを簡単に翻訳できます。つまり、時間とリソースを節約しながら、より良い関係やコミュニケーションを構築することができるのです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="section-process-step">
+                <div class="container" style="padding: 0;">
+                    <div class="row row-grid align-items-center justify-content-between">
+                        <div class="col-xl-5 col-lg-5 order-lg-2">
+                            <div class="pr-md-4">
+                                <span class="badge badge-primary badge-pill">キャプションエディター</span>
+                                <h3 class="h2 mt-4">キャプションを簡単編集</h3>
+                                <p class="lead lh-190 my-4">
+                                    Maestraのキャプションエディターを使えば、自動的に文字起こしされたYouTube動画に簡単に変更を加えることができます。
+                                </p>
+                                <div class="mt-4">
+                                    <ul class="list-unstyled">
+                                        <li class="py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <div class="badge badge-circle badge-primary mr-3">
+                                                        ✔
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="mb-0">カスタムキャプション付きのMP4動画として書き出し！</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <div class="badge badge-circle badge-primary mr-3">
+                                                        ✔
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="mb-0">SubRip (.srt)、WebVTT (.vtt)、Scenarist
+                                                        (.scc)、Spruce (.stl)、Cheetah (.cap)、Avid DS
+                                                        (.txt)、PDF、TXTとして字幕やキャプションをエクスポート</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <div class="badge badge-circle badge-primary mr-3">
+                                                        ✔
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="mb-0">音声文字起こしデータの同期</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="py-2">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <div class="badge badge-circle badge-primary mr-3">
+                                                        ✔
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="mb-0">タイムスタンプの自動生成</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 order-lg-1 perspective-left hover-scale-111">
+                            <img alt="Caption Editor" src="../assets/template/img/screenshots/subtitle-editor.png"
+                                class="img-fluid overflow-laptop-image"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 10px; " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-process-step">
+                <div class="container">
+                    <div class="row row-grid align-items-center justify-content-between">
+                        <div class="col-xl-5 col-lg-5 order-1">
+                            <div class="pr-md-4">
+                                <span class="badge badge-success badge-pill">埋め込みプレーヤー</span>
+                                <h3 class="h2 mt-4">埋め込み可能な翻訳ツール</h3>
+                                <p class="lead lh-190 my-4">
+                                    Maestraの埋め込みプレーヤーで自動生成された字幕付き動画を共有いただけます。キャプションが自動生成され、動画をダウンロードまたはエクスポートすることなく共有できます。
+                                </p>
+                                <p>
+                                    <img style="padding-bottom: 1px" alt="Embed 言語 Icon"
+                                        src="../assets/template/img/svg/icons/embed言語Icon.svg" />
+                                    アイコンをクリックすると、自動生成されたキャプションが表示されます。
+                                </p>
+                                <a href="https://app.maestra.ai/signup" onclick="bingDownload();"
+                                    class="btn btn-lg btn-warning btn-icon hover-translate-y-n10 dl-link">
+                                    <span class="btn-inner--text"><strong>無料で始める &nbsp;➜</strong></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 order-2" style="width: 560px; height:315px;">
+                            <div id="embed" data-src="https://web.maestrasuite.com/embed/-MfdqZsn6HOAmKzUIv8w"
+                                onClick="loadEmbed()">
+                                <img alt="Embed player is synced with Maestra video editor" loading="lazy"
+                                    src="../assets/template/img/screenshots/embed-player.png" class="img-fluid"
+                                    style="width: 560px; cursor: pointer" />
+                                <!-- <iframe loading="lazy" title="Maestra Player" width="560" height="315" allowfullscreen
+									src="https://web.maestrasuite.com/embed/-MfdqZsn6HOAmKzUIv8w"></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-process-step">
+                <div class="container" style="padding: 0;">
+                    <div class="row row-grid align-items-center justify-content-between">
+                        <div class="col-xl-5 col-lg-5 order-lg-2">
+                            <div class="pr-md-4">
+                                <!-- <span class="badge badge-primary badge-pill">文字起こし</span> -->
+                                <h3 class="h2 mt-4">Maestraをチームでも</h3>
+                                <p class="lead lh-190 my-4">
+                                    チームや会社内でアクセス権限を個別に設定できる、チーム単位のチャンネルを作成できます。メンバーと共有ファイルをリアルタイムで共同編集いただけます。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <img alt="Utilize Maestra teams to edit videos online"
+                                src="../assets/template/img/screenshots/maestra-teams.png" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-process-step">
+                <div class="container">
+                    <div class="row row-grid align-items-center justify-content-between">
+                        <div class="col-xl-6 col-lg-6 order-lg-1">
+                            <div class="pr-md-4">
+                                <h3 class="h2 mt-4">バーチャルコラボレーション</h3>
+                                <p class="lead my-4 lh-190">
+                                    Maestraのオンライン共同ビデオ編集なら、同僚やチームと共同作業を行うことができます。多くの動画プロジェクトは、グループ作業で行われるので、Maestraの使命は、デジタル化が進む中で、人々がより良い共同作業を行えるよう支援することです。
+                                </p>
+                                <a href="https://app.maestra.ai/signup" onclick="bingDownload();"
+                                    class="btn btn-lg btn-warning btn-icon hover-translate-y-n10 mt-2 dl-link">
+                                    <span class="btn-inner--text"><strong>無料で始める &nbsp;➜</strong></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 order-lg-2">
+                            <img alt="Collaboration is essential during video localization"
+                                src="../assets/template/img/screenshots/share-modal.png" class="img-fluid"
+                                style="box-shadow: 0 1px 13px 1px rgba(0,0,0,0.1); border-radius: 20px; " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-process-step">
+                <div class="container">
+                    <div class="row row-grid align-items-center justify-content-between">
+                        <div class="col-xl-6 col-lg-6 order-lg-2">
+                            <div class="pr-md-4">
+                                <h3 class="h2 mt-4">セキュリティ</h3>
+                                <p class="lead mb-4 lh-190">
+                                    これらのプロセスは完全に自動化されています。ファイルは、保管時および転送時に暗号化され、承認なしには、他者がアクセスすることはできません。ファイルを削除すると、音声ファイルや動画ファイル、トランスクリプトを含むすべてのデータが削除されます。<a
+                                        href="https://maestra.ai/security">詳細はセキュリティに関するページをご覧ください！</a>
+                                </p>
+                                <h3 class="h2 mt-4">複数のチャンネルからアップロード</h3>
+                                <p class="lead mb-4 lh-190">
+                                    お使いのデバイス、Google
+                                    Drive、Dropbox、Instagramからアップロードした後、またはYouTubeやメディアのリンクを貼り付けて、動画を翻訳します。
+                                </p>
+                                <a href="https://app.maestra.ai/signup" onclick="bingDownload();"
+                                    class="btn btn-lg btn-warning btn-icon hover-translate-y-n10 mt-2 dl-link">
+                                    <span class="btn-inner--text"><strong>今すぐ動画を翻訳する &nbsp;➜</strong></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 order-lg-1" id="languages">
+                            <div class="card py-5 px-4 mb-0">
+                                <div class="card-body">
+                                    <h6 class="h2">
+                                        <span class="h5">動画の翻訳を</span><br />
+                                        <strong>50ヶ国語以上で</strong>
+                                    </h6>
+                                    <div class="row lead lh-140 mt-4 ml-0 mr-0"
+                                        style="font-size: 1rem; font-weight: 400;">
+                                        <div class="col-6 pl-0">
+                                            <p>
+                                                <a href="https://maestrasuite.com/transcribe-english">英語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-spanish-subtitles">スペイン語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-french-subtitles">フランス語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-german-subtitles">ドイツ語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-italian-subtitles">イタリア語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-portuguese-subtitles">ポルトガル語</a><br /><a
+                                                    href="https://maestrasuite.com/transcribe-arabic">アラビア語</a><br />
+                                            </p>
+                                        </div>
+                                        <div class="col-6 pl-0">
+                                            <p>
+                                                <a href="https://maestrasuite.com/transcribe-turkish">トルコ語</a><br /><a
+                                                    href="https://maestrasuite.com/transcribe-swedish">スウェーデン語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-finnish-subtitles">フィンランド語</a><br /><a
+                                                    href="https://maestrasuite.com/how-to-create-dutch-subtitles">オランダ語</a><br /><a
+                                                    href="https://maestrasuite.com/transcribe-japanese">日本語</a><br />
+                                            </p>
+                                            <a href="#" class="link-underline-primary mt-6" data-toggle="modal"
+                                                data-target="#exampleModal">一覧を見る</a>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-lg"
+                                                    role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">
+                                                                対応可能な言語
+                                                            </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body row lh-140 mt-4 ml-4 mr-0">
+                                                            <div class="col-4 pl-0">
+                                                                <h5 style="font-size: 0.9em;"><u>すべてのソリューション</u></h5>
+                                                                <h6 style="font-size: 0.9em;">起点言語</h6>
+                                                                <p style="font-size: 0.9em;">
+                                                                    アフリカーンス語<br />アムハラ語<br />アラビア語<br />アルメニア語<br />アゼルバイジャン語<br />
+                                                                    バスク語<br />ベンガル語<br />ブルガリア語<br />カタルーニャ語<br />広東語<br />
+                                                                    中国語<br />クロアチア語<br />チェコ語<br />デンマーク語<br />オランダ語<br />
+                                                                    英語<br />フィリピン語<br />フィンランド語<br />フランス語<br />ガリシア語<br />
+                                                                    グルジア語<br />ドイツ語<br />ギリシャ語<br />グジャラート語<br />ヘブライ語<br />
+                                                                    ヒンディー語<br />ハンガリー語<br />アイスランド語<br />インドネシア語<br />イタリア語<br />
+                                                                    日本語<br />ジャワ語<br />カンナダ語<br />クメール語<br />韓国語<br />
+                                                                    ラーオ語<br />ラトビア語<br />リトアニア語<br />マレー語<br />マラヤーラム語<br />
+                                                                    マラーティー語<br />ネパール語<br />ブークモール<br />ペルシア語<br />ポーランド語<br />
+                                                                    ポルトガル語<br />ルーマニア語<br />ロシア語<br />セルビア語<br />シンハラ語<br />
+                                                                    スロバキア語<br />スロベニア語<br />スペイン語<br />スンダ語<br />スワヒリ語<br />
+                                                                    スウェーデン語<br />タミル語<br />テルグ語<br />タイ語<br />トルコ語<br />
+                                                                    ウクライナ語<br />ウルドゥー語<br />ベトナム語<br />ズールー語
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-4 pl-2">
+                                                                <h5 style="font-size: 0.9em;"><u>字幕</u></h5>
+                                                                <h6 style="font-size: 0.9em;">目標言語</h6>
+                                                                <p style="font-size: 0.9em;">
+                                                                    アフリカーンス語<br />アルバニア語<br />アムハラ語<br />アラビア語<br />アルメニア語<br />
+                                                                    アゼルバイジャン語<br />バスク語<br />ベラルーシ語<br />ベンガル語<br />ボスニア語<br />
+                                                                    ブルガリア語<br />カタルーニャ語<br />中国語<br />クロアチア語<br />チェコ語<br />
+                                                                    デンマーク語<br />オランダ語<br />英語<br />エストニア語<br />フィンランド語<br />
+                                                                    フランス語<br />グルジア語<br />ドイツ語<br />ギリシャ語<br />ハイチ語<br />
+                                                                    ヘブライ語<br />ヒンディー語<br />ハンガリー語<br />アイスランド語<br />インドネシア語<br />
+                                                                    イタリア語<br />日本語<br />カザフスタン語<br />クメール語<br />韓国語<br />
+                                                                    クルド語<br />キルギス語<br />ラテン語<br />ラトビア語<br />リトアニア語<br />
+                                                                    ルクセンブルク語<br />マケドニア語<br />マレー語<br />マルタ語<br />ネパール語<br />
+                                                                    ノルウェー語<br />ペルシャ語<br />ポーランド語<br />ポルトガル語<br />パンジャブ語<br />
+                                                                    ルーマニア語<br />ロシア語<br />サモア語<br />セルビア語<br />スロバキア語<br />
+                                                                    スロベニア語<br />ソマリア語<br />スペイン語<br />スウェーデン語<br />タイ語<br />
+                                                                    トルコ語<br />ウクライナ語<br />ウルドゥー語<br />ウズベク語<br />ベトナム語<br />
+                                                                    ウェールズ語
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-4 pl-2">
+                                                                <h5 style="font-size: 0.9em;"><u>吹き替え</u></h5>
+                                                                <h6 style="font-size: 0.9em;">目標言語</h6>
+                                                                <p style="font-size: 0.9em;">
+                                                                    アラビア語<br />中国語<br />チェコ語<br />デンマーク語<br />オランダ語<br />
+                                                                    英語<br />フィリピン語<br />フィンランド語<br />フランス語<br />ドイツ語<br />
+                                                                    ギリシャ語<br />ヒンディー語<br />ハンガリー語<br />アイスランド語<br />イタリア語<br />
+                                                                    日本語<br />韓国語<br />ノルウェー語<br />ポーランド語<br />ポルトガル語<br />
+                                                                    ルーマニア語<br />ロシア語<br />スロバキア語<br />スペイン語<br />スウェーデン語<br />
+                                                                    トルコ語<br />ウクライナ語<br />ベトナム語<br />ウェールズ語
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer" style="justify-content: flex-start;">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">
+                                                                閉じる
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="slice slice-lg bg-gradient-dark">
+        <div class="container d-flex align-items-center position-relative zindex-100">
+            <div class="col px-0">
+                <div class="row row-grid justify-content-around align-items-center">
+                    <div class="col-lg-10">
+                        <div class="text-center">
+                            <h3 class="h1 text-white mb-3">無料版で今すぐはじめる</h3>
+                            <p class="lead text-white lh-180 mx-auto mb-4">
+                                今すぐMaestraにサインアップすれば、ソフトウェアをダウンロードすることなく、コンテンツのローカライズを開始し、世界中の視聴者へリーチすることができます。
+                            </p>
+                            <p class="lead text-white lh-180 mx-auto mb-4">
+                                教育者、研究者、マーケティング担当者、講演者、ジャーナリスト、メディア企業、そしてあなたに最適です。
+                            </p>
+                            <a href="https://maestra.ai/book-a-demo" class="btn btn-white hover-translate-y-n3">
+                                デモを依頼する
+                            </a>
+                        </div>
+                        <div class="mt-6 mb-n10">
+                            <div class="frame-laptop">
+                                <img alt="laptop frame" src="../assets/template/img/svg/devices/macbook.svg"
+                                    class="img-fluid">
+                                <div class="frame-inner">
+                                    <img alt="maestra caption editor"
+                                        src="../assets/template/img/screenshots/subtitle-editor.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice">
+        <div class="container pt-6 pb-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <div class="mt-4">
+                        <a href="https://app.maestra.ai/signup" class="btn btn-app-store mx-2 my-2">
+                            <img alt="maestra logo" src="../assets/template/img/brand/maestra-logo.png"
+                                class="img-fluid" style="width: 1em;
+                                font-size: 2.5rem;
+                                position: absolute;
+                                left: 1.25rem;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            " />
+                            <span class="btn-inner--text">動画を翻訳する</span>
+                            <span class="btn-inner--brand">今すぐはじめる</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <!-- Container -->
+        <div class="container">
+            <div class="row mb-6 justify-content-center">
+                <div class="col-lg-6 col-md-10 text-center">
+                    <span class="badge badge-primary badge-pill">お客様からの評価</span>
+                    <h5 class="h5 lh-180 mt-4 mb-0 mb-xl-6">Maestraについてのコメント</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-2 col-lg-4 col-sm-6">
+                    <div class="card hover-shadow-lg hover-translate-y-n3">
+                        <div class="card-body py-5 text-center h-100">
+                            <div class="img-fluid mb-4 w-50 mx-auto">
+                                <img src="../assets/template/img/svg/icons/G2_Crowd_logo.svg" alt="g2"
+                                    style="width: 50px" />
+                            </div>
+                            <!-- Rating -->
+                            <span class="static-rating d-block">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <!-- Info -->
+                            <h5 class="h6 mt-4 mb-1">4.7/5つ星</h5>
+                            <a href="https://www.g2.com/products/maestra/reviews" target="_blank"
+                                class="ttext-sm link link-underline-dark">さらに詳しく</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="card hover-shadow-lg hover-translate-y-n3 mt-xl-n6">
+                        <div class="card-body text-center py-5 h-100">
+                            <h5>「自動文字起こし、字幕、吹き替えがオールインワンのターンキーソリューション」</h5>
+                            <p class="px-2 mb-4">
+                                Maestraが当社にとって最適なソリューションであり、時間とお金の節約につながっています。
+                            </p>
+                            <!-- Rating -->
+                            <span class="static-rating d-block">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <a href="https://www.g2.com/products/maestra/reviews/maestra-review-4627444" target="_blank"
+                                class="ttext-sm link link-underline-dark">もっと読む</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="card hover-shadow-lg hover-translate-y-n3">
+                        <div class="card-body text-center py-5 h-100">
+                            <h5>「動画にキャプションを付けるなら、Maestraに投資する価値は100%あります」</h5>
+                            <p class="px-2 mb-4">
+                                競合と比べてカスタマーサービスの質が大変良いです！
+                            </p>
+                            <!-- Rating -->
+                            <span class="static-rating d-block">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <a href="https://www.g2.com/products/maestra/reviews/maestra-review-4623732" target="_blank"
+                                class="ttext-sm link link-underline-dark">もっと読む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="card hover-shadow-lg hover-translate-y-n3">
+                        <div class="card-body text-center py-5 h-100">
+                            <h5>「Maestraでメディアを使いこなす」</h5>
+                            <p class="px-2 mb-4">
+                                この製品の最も優れた点は、自動字幕生成です。また何より多言語に対応しています。
+                            </p>
+                            <!-- Rating -->
+                            <span class="static-rating d-block">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star">☆</span>
+                            </span>
+                            <a href="https://www.g2.com/products/maestra/reviews/maestra-review-4851118" target="_blank"
+                                class="ttext-sm link link-underline-dark">もっと読む</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <div class="card hover-shadow-lg hover-translate-y-n3">
+                        <div class="card-body text-center py-5 h-100">
+                            <h5>「字幕追加はMaestraにお任せしてます。最高です！」</h5>
+                            <p class="px-2 mb-4">
+                                Maestraはとにかくすごい！多言語字幕を簡単に作成することができました。非常に使いやすいインターフェイスのおかげで複数のユーザーでの作業やコラボレーションができました。
+                            </p>
+                            <!-- Rating -->
+                            <span class="static-rating d-block">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <a href="https://www.g2.com/products/maestra/reviews/maestra-review-4618818" target="_blank"
+                                class="ttext-sm link link-underline-dark">もっと読む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark">
+            <!-- Footer -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <h3 class="text-secondary h5 mb-2">
+                                    文字起こし、キャプション、ナレーションをわずかな時間で
+                                </h3>
+                                <p class="font-size-lg mb-0 text-white opacity-8">
+                                    高精度の音声文字起こし、アドバンスド・テキストエディター、50ヵ国語以上を翻訳可能。
+                                </p>
+                            </div>
+                            <div class="col-lg-5 text-lg-right mt-4 mt-lg-0">
+                                <a href="https://app.maestra.ai/signup" onclick="bingDownload();"
+                                    class="btn btn-primary my-2 dl-link">
+                                    無料で始める
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-5" />
+                <div class="row pt-md align-items-center justify-content-center">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <!-- Icon -->
+                        <img alt="Maestra Logo" src="../assets/template/img/brand/maestra-logo.png" class="img-fluid"
+                            style="width: 30px;" />
+                        <!-- Title -->
+                        <h5 class="h6 font-weight-bold text-white mt-3 mb-2">Maestra</h5>
+                        <!-- Text -->
+                        <p class="text-sm mb-2">
+                            Maestraは動画や音声ファイルを60ヶ国語以上に自動翻訳をして字幕や吹き替えの追加を可能にし、世界中の人々に届けることができます。
+                        </p>
+                        <a href="https://app.maestra.ai/signup" onclick="bingDownload();"
+                            class="text-sm dl-link">無料で始める</a>
+                        <!-- Social -->
+                        <ul class="nav mt-2">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="https://twitter.com/maestrasuite" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/company/maestrasuite"
+                                    target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/MaestraSuite/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-4 col-sm-4 mb-5 mb-lg-0 ml-lg-auto">
+                        <h6 class="heading mb-3">ソリューション</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://maestra.ai/tools/audio-to-text/">文字起こし</a>
+                            </li>
+
+                            <li><a href="https://maestra.ai/tools/video-dubber/">ナレーション</a></li>
+                            <li>
+                                <a href="https://maestra.ai/tools/audio-to-text/">音声から文字へ変換</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/subtitling-software-for-translators">翻訳者向けの字幕ツール</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/subtitle-generator">動画へ字幕追加</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/video-dubber/">動画吹き替え</a>
+                            </li>
+                            <li><a
+                                    href="https://maestra.ai/tools/video-to-text/youtube-transcript-generator">YouTuber向け</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-4 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">会社</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="https://maestrahelp.zendesk.com/">よくある質問</a></li>
+                            <li><a href="https://maestra.ai/blogs">ブログ</a></li>
+                            <li><a href="https://maestra.ai/terms-of-service">利用規約</a></li>
+                            <li><a href="https://maestra.ai/privacy-policy">個人情報保護方針</a></li>
+                            <li><a href="https://maestra.ai/contact">お問合せ</a></li>
+                            <li><a href="https://maestra.ai/about">会社概要</a></li>
+                            <li><a href="https://maestra.ai/sitemap">サイトマップ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-4 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">フォーマット</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text">MP3から文字へ変換</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/video-to-text/convert-mp4-to-text">MP4から文字へ変換</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/audio-to-text/convert-aac-to-text">AACから文字へ変換</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/video-to-text/convert-mov-to-text">MOVから文字へ変換</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/audio-to-text/convert-m4a-to-text">M4Aから文字へ変換</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/subtitle-generator/srt-generator">SRT生成ツール</a>
+                            </li>
+                            <li>
+                                <a href="https://maestra.ai/tools/subtitle-generator/vtt-generator">VTT生成ツール</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2023 Katara Tech, Inc. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav align-items-center justify-content-center justify-content-md-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://maestra.ai/security">セキュリティ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://maestra.ai/about">会社概要</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://maestra.ai/contact">お問合せ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://maestra.ai/terms-of-service">利用規約</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="https://maestra.ai/privacy-policy">個人情報保護方針</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/template/libs/typed.js/lib/typed.min.js"></script>
+    <!-- Quick JS -->
+    <script src="../assets/template/js/quick-website.js"></script>
+    <!-- My JS -->
+    <script src="../assets/template/js/maestra-player.js"></script>
+    <script src="../assets/template/js/maestra.js"></script>
+
+</body>
+
+</html>

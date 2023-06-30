@@ -1,33 +1,53 @@
 {
-    "name": "中文",
-    "flag": "cn",
-    "button_text":"浏览文件",
-    "notice_text":"*无需信用卡或账户",
-    "breadcrumbs":{
-        "home":{
-            "path":"zh",
-            "display":"主页"
-        },
-        "tools":{
-            "path":"zh/tools",
-            "display":"工具 工具 工具" 
-        },
-        "video-dubber":{
-            "path":"zh/tools/video-dubber",
-            "display":"視頻配音"
-        },
-        "subtitle-translator":{
-            "path":"zh/tools/subtitle-translator",
-            "display":"字幕翻譯器"
-        }
+  "name": "中文",
+  "flag": "cn",
+  "button_text": "浏览文件",
+  "notice_text": "*无需信用卡或账户",
+  "breadcrumbs": {
+    "home": {
+      "path": "zh",
+      "display": "主页"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. 版權所有。保留所有權利。",
-        "subtitle_translator": "字幕翻譯器" ,
-        "transcribe_youtube":  "轉錄 YouTube 視頻" ,
-        "srt_generator":       "SRT發電機" ,
-        "transcribe_arabic":   "轉錄阿拉伯語" ,
-        "transcribe_spanish":  "轉錄西班牙語" ,
-        "transcribe_french":   "轉錄法語"
+    "tools": {
+      "path": "zh/tools",
+      "display": "工具 工具 工具"
+    },
+    "video-dubber": {
+      "path": "zh/tools/video-dubber",
+      "display": "視頻配音"
+    },
+    "subtitle-translator": {
+      "path": "zh/tools/subtitle-translator",
+      "display": "字幕翻譯器"
+    },
+    "audio-to-text": {
+      "path": "zh/tools/audio-to-text",
+      "display": "音頻轉文字"
+    },
+    "video-translator": {
+      "path": "zh/tools/video-translator",
+      "display": "視頻翻譯器"
+    },
+    "convert-mp3-to-text": {
+      "path": "zh/tools/audio-to-text/convert-mp3-to-text",
+      "display": "將 MP3 轉換為文本"
+    },
+    "video-to-text": {
+      "path": "zh/tools/video-to-text",
+      "display": "視頻轉文字"
+    },
+    "convert-mp4-to-text": {
+      "path": "zh/tools/video-to-text/convert-mp4-to-text",
+      "display": "將 mp4 轉換為文本"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. 版權所有。保留所有權利。",
+    "subtitle_translator": "字幕翻譯器",
+    "transcribe_youtube": "轉錄 YouTube 視頻",
+    "srt_generator": "SRT發電機",
+    "transcribe_arabic": "轉錄阿拉伯語",
+    "transcribe_spanish": "轉錄西班牙語",
+    "transcribe_french": "轉錄法語"
+  }
 }

@@ -1,0 +1,122 @@
+#addict f"../langdata/{environ.lang}.json"
+
+#rreplace "\"../../assets" "\"/assets"
+#rreplace "\"../assets" "\"/assets"
+#treplace "\"../../assets" "\"/assets"
+#treplace "\"../assets" "\"/assets"
+#rreplace " ➜" ""
+
+#tremove %aside%[1]
+#tremove %section.yt-full%
+
+#treplace "\"name\": \"Home\"" f"\"name\": \"{breadcrumbs.home.display}\""
+#treplace "\"item\": \"https://maestra.ai/\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.home.path}/\""
+#treplace "\"name\": \"Tools\"" f"\"name\": \"{breadcrumbs.tools.display}\""
+#treplace "\"item\": \"https://maestra.ai/tools/\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.tools.path}/\""
+#treplace "\"name\": \"Video To Text\"" f"\"name\": \"{breadcrumbs.video-to-text.display}\""
+
+#translate %section#brands p%
+#translate %div.rating-card%[3]
+#translate %section#hero-home div.container p%
+#translate %div[class="sub-video-steps general-flex fullsize"] h2%
+#translate %section#faq-section%
+
+#tremove %aside%
+
+#include <../default_changes.match>
+
+%html%.lang = {environ.lang}
+%body > main% <-> %body%:
+    %img%[3:7].alt = %img%[8:12].alt
+    %ul[class="breadcrumb-row container"]% <-> %%:
+        %a%[0].href = f"https://maestra.ai/{breadcrumbs.home.path}"
+        %a%[0].text = {breadcrumbs.home.display}
+        %a%[1].href = f"https://maestra.ai/{breadcrumbs.tools.path}"
+        %a%[1].text = {breadcrumbs.tools.display}
+        %li%[4].text = {breadcrumbs.video-to-text.display}
+    %section#hero-home div.container% <-> %div[class="column align-items-center justify-content-center justify-content-lg-start"]%:
+        %h1%.text = %h1%.text
+        %a%.text = {button_text}
+        %p[class="requirements-notice"]%.text = {notice_text}
+    %div[class="sub-video-steps general-flex fullsize"]% <-> %div[class="card p-3 col-lg-12"]%:
+        %div[class="sub-video-card"]%[0] <-> %div[class="col-lg-8"]%[0]:
+            %img%.alt = %div[class="col-lg-4"] > img%.alt
+            %h2%.text = %h5%.text
+            %p%.text = %p.text-muted%.text
+        %div[class="sub-video-card"]%[1] <-> %div[class="col-lg-8"]%[2]:
+            %img%.alt = %div[class="col-lg-4"] > img%.alt
+            %h2%.text = %h5%.text
+            %p%.text = %p.text-muted%.text
+    %section#transcript-software% <-> %section[class="slice slice-lg bg-primary pb-5"]%:
+        %h2% = %h3%
+        %h3%[:].text = %span.h4%[:].text
+        %p%[:] = %p%[:]
+    %section[id="time-saving"]% <-> %div[class="pr-md-4"]%[0]:
+        %span% = %span%[0]
+        %h3% = %h3%
+        %p% = %p%
+        %li%[:] = %span%[1:]
+    %section#custom-styling% <-> %div[class="col-xl-5 col-lg-5"]%:
+        %span% = %span%
+        %h2% = %h5%
+        %p% = %p%
+        %a%[1].text = %a span strong%.text
+    %section[id="maestra-teams"]% <-> %div[class="col-xl-5 col-lg-5 order-lg-2"]%[1]:
+        %h2% = %h3%
+        %p%.text = %p%.text
+    %section[id="time-saving"]% <-> %div[class="col-lg-7 order-lg-1 perspective-left hover-scale-111"]%:
+        %img% = %img%
+    %section#maestra-collabrate% <-> %div[class="col-xl-6 col-lg-6 order-lg-1"]%:
+        %h2% = %h3%
+        %p% = %p%
+        %a%.text = %a span strong%.text
+    %div[class="lang-details half-size"]% <-> %div[class="col-xl-6 col-lg-6 order-lg-2"]%:
+        %h2%[0] = %h3%[0]
+        %p% = %p%
+        %h2%[1] = %h3%[1]
+        %p%[1] = %p%[1]
+        %a%[1].text = %strong%.text
+    %div[class="lang-pack"]% <-> %div[class="col-xl-5 col-lg-5 order-lg-1"] div[class="card-body"]%:
+        %span%[0] = %h6 span%
+        %span%[1] = %h6 strong%
+        %ul li a%[:] = %div[class="col-6 pl-0"] p a%[:]
+        %a[class="lang-all"]% = %div[class="col-6 pl-0"] > a%
+    %section#app-working% <-> %div[class="row row-grid justify-content-around align-items-center"]%:
+        %h2%.text = %h3%.text
+        %p%[:] = %p%[:]
+        %a%.text = %a%.text
+    %span.parent-btn-right% <-> %a[class="btn btn-app-store mx-2 my-2"]%:
+        %span%[:].text = %span%[:].text
+    %section#testimonial% <-> %div[class="col-lg-6 col-md-10 text-center"]%:
+        %span% = %span%
+        %h2% = %h5%
+    %section#testimonial% <-> %div.container-fluid%:
+        %div.rating-card% <-> %div.card-body%:
+            %span.rating-overall%.text = %h5%.text
+            %a%.text = %a%.text
+        %div[class="rating-card"]%[:2] <-> %div.card-body%[1:3]:
+            %span%.text = %h5%.text
+            %p%.text = %p%.text
+            %a%.text = %a%.text
+        %div[class="rating-card"]%[3:] <-> %div.card-body%[3:]:
+            %span%.text = %h5%.text
+            %p%.text = %p%.text
+            %a%.text = %a%.text
+    %div[class="ta-box solid-half"]%[:] <-> %div[class="p-3 d-flex"]%[:]:
+        %h3% = %span%
+        %p% = %p%
+    %section[id="generate-sub-2"]% <-> %section[class="slice slice-lg bg-dark"]%:
+        %h2% = %h2%
+        %div[class="add-info"]% <-> %div[class="mt-5 text-center"]%:
+            %p% = %p%
+            %a%.text = %a%.text
+    %div[class="step-no-item flex-box-holder"]%[:] <-> %div[class="media align-items-center"]%[:]:
+        %div[class="stp-dt"]% <-> %div[class="media-body"]%:
+            %h3% = %h6%
+            %p% = %span%
+    %section[id="all-in-one"] > div > div div[class="dt-sec half-size"]% <-> %div[class="container position-relative zindex-100 px-5"] > div div[class="col-lg-6 offset-xl-0"]%:
+        %span% = %span%
+        %h2% = %h3%
+        %p% = %p%
+        %a%.text = %strong%.text
+        %p%[1] = %p%[1]

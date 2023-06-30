@@ -1,33 +1,53 @@
 {
-    "name": "Suomi",
-    "flag": "fi",
-    "button_text":"Selata Tiedostoa",
-    "notice_text":"* Luottokorttia tai tiliä ei vaadita",
-    "breadcrumbs":{
-        "home":{
-            "path":"fi",
-            "display":"Koti"
-        },
-        "tools":{
-            "path":"fi/tyokalut",
-            "display":"Vaerktojer"
-        },
-        "video-dubber":{
-            "path":"fi/tyokalut/video-dubberi",
-            "display":"Video Dubberi"
-        },
-        "subtitle-translator":{
-            "path":"fi/tyokalut/tekstityksen-kaantaja",
-            "display":"Tekstityksen kääntäjä"
-        }
+  "name": "Suomi",
+  "flag": "fi",
+  "button_text": "Selata Tiedostoa",
+  "notice_text": "* Luottokorttia tai tiliä ei vaadita",
+  "breadcrumbs": {
+    "home": {
+      "path": "fi",
+      "display": "Koti"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. Kaikki oikeudet pidätetään. ",
-        "subtitle_translator": "" ,
-        "transcribe_youtube":  "" ,
-        "srt_generator":       "" ,
-        "transcribe_arabic":   "" ,
-        "transcribe_spanish":  "" ,
-        "transcribe_french":   ""
+    "tools": {
+      "path": "fi/tyokalut",
+      "display": "Vaerktojer"
+    },
+    "video-dubber": {
+      "path": "fi/tyokalut/video-dubberi",
+      "display": "Video Dubberi"
+    },
+    "subtitle-translator": {
+      "path": "fi/tyokalut/tekstityksen-kaantaja",
+      "display": "Tekstityksen kääntäjä"
+    },
+    "audio-to-text": {
+      "path": "fi/tyokalut/audio-en-texte",
+      "display": "Audio en Texte"
+    },
+    "video-translator": {
+      "path": "fi/tyokalut/video-kaantaja",
+      "display": "Video Kääntäjä"
+    },
+    "convert-mp3-to-text": {
+      "path": "fi/tyokalut/audio-en-texte/muunna-mp3-tekstiksi",
+      "display": "Muunna MP3 tekstiksi"
+    },
+    "video-to-text": {
+      "path": "fi/tyokalut/video-tekstiksi",
+      "display": "video tekstiksi"
+    },
+    "convert-mp4-to-text": {
+      "path": "fi/tyokalut/video-tekstiksi/muuntaa-mp4-tekstiksi",
+      "display": "muuntaa mp4 tekstiksi"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. Kaikki oikeudet pidätetään. ",
+    "subtitle_translator": "",
+    "transcribe_youtube": "",
+    "srt_generator": "",
+    "transcribe_arabic": "",
+    "transcribe_spanish": "",
+    "transcribe_french": ""
+  }
 }

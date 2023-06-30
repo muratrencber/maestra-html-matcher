@@ -1,34 +1,54 @@
 {
-    "name": "عربي",
-    "flag": "sa",
-    "button_text":"ملف الاستعراض",
-    "notice_text":"* لا يلزم وجود بطاقة ائتمان أو حساب",
-    "brands-using":"العلامات التجارية التي تستخدم Maestra:",
-    "breadcrumbs":{
-        "home":{
-            "path":"ar",
-            "display":"الصفحة الرئيسية"
-        },
-        "tools":{
-            "path":"ar/tools",
-            "display":"أدوات"
-        },
-        "video-dubber":{
-            "path":"ar/tools/video-dubber",
-            "display":"صوت إلى نص"
-        },
-        "subtitle-translator":{
-            "path":"ar/tools/subtitle-translator",
-            "display":"مترجم الترجمة"
-        }
+  "name": "عربي",
+  "flag": "sa",
+  "button_text": "ملف الاستعراض",
+  "notice_text": "* لا يلزم وجود بطاقة ائتمان أو حساب",
+  "brands-using": "العلامات التجارية التي تستخدم Maestra:",
+  "breadcrumbs": {
+    "home": {
+      "path": "ar",
+      "display": "الصفحة الرئيسية"
     },
-    "footer":{
-        "copy_text":"© 2023 منصة كتارا تيك. جميع الحقوق محفوظة",
-        "subtitle_translator":"مترجم الترجمة",
-        "transcribe_youtube": "نسخ فيديو يوتيوب",
-        "srt_generator":  "مولد SRT",
-        "transcribe_arabic": "كتابة العربية",
-        "transcribe_spanish":"نسخ الإسبانية",
-        "transcribe_french": "نسخ الفرنسية"
+    "tools": {
+      "path": "ar/tools",
+      "display": "أدوات"
+    },
+    "video-dubber": {
+      "path": "ar/tools/video-dubber",
+      "display": "صوت إلى نص"
+    },
+    "subtitle-translator": {
+      "path": "ar/tools/subtitle-translator",
+      "display": "مترجم الترجمة"
+    },
+    "audio-to-text": {
+      "path": "ar/tools/audio-to-text",
+      "display": "الصوت إلى نص"
+    },
+    "video-translator": {
+      "path": "ar/tools/video-translator",
+      "display": "مترجم فيديو"
+    },
+    "convert-mp3-to-text": {
+      "path": "ar/tools/audio-to-text/convert-mp3-to-text",
+      "display": "تحويل MP3 إلى نص"
+    },
+    "video-to-text": {
+      "path": "ar/tools/video-to-text",
+      "display": "فيديو إلى نص"
+    },
+    "convert-mp4-to-text": {
+      "path": "ar/tools/video-to-text/convert-mp4-to-text",
+      "display": "تحويل mp4 إلى نص"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 منصة كتارا تيك. جميع الحقوق محفوظة",
+    "subtitle_translator": "مترجم الترجمة",
+    "transcribe_youtube": "نسخ فيديو يوتيوب",
+    "srt_generator": "مولد SRT",
+    "transcribe_arabic": "كتابة العربية",
+    "transcribe_spanish": "نسخ الإسبانية",
+    "transcribe_french": "نسخ الفرنسية"
+  }
 }

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Upload an audio file and convert MP3 to text within seconds." />
+    <meta name="author" content="Maestra" />
+    <!-- Facebook Tags -->
+    <meta property="og:title" content="MP3 to Text - Convert Audio File to Text Automatically" />
+    <meta property="og:description" content="Upload an audio file and convert MP3 to text within seconds." />
+    <meta property="og:image" content="https://maestra.ai/assets/og/fb.png" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text" />
+    <link rel="canonical" href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text" />
+    <link rel="alternate" hreflang="ar" href="https://maestra.ai/ar/tools/audio-to-text/convert-mp3-to-text" />
+    <link rel="alternate" hreflang="da" href="https://maestra.ai/da/vaerktojer/lyd-til-text/konverter-mp3-til-tekst" />
+    <link rel="alternate" hreflang="de"
+        href="https://maestra.ai/de/werkzeuge/audio-zu-text/konvertieren-sie-mp3-in-text" />
+    <link rel="alternate" hreflang="en" href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text" />
+    <link rel="alternate" hreflang="es" href="https://maestra.ai/es/herramientas/audio-a-texto/convertir-mp3-a-texto" />
+    <link rel="alternate" hreflang="fi" href="https://maestra.ai/fi/tyokalut/audio-en-texte/muunna-mp3-tekstiksi" />
+    <link rel="alternate" hreflang="fr" href="https://maestra.ai/fr/outils/audio-en-texte/convertir-mp3-en-text" />
+    <link rel="alternate" hreflang="it" href="https://maestra.ai/it/strumenti/audio-a-testo/converti-mp3-in-testo" />
+    <link rel="alternate" hreflang="ja" href="https://maestra.ai/ja/tools/audio-to-text/convert-mp3-to-text" />
+    <link rel="alternate" hreflang="x-default" href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text" />
+    <link rel="alternate" hreflang="zh" href="https://maestra.ai/zh/tools/audio-to-text/convert-mp3-to-text" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#1a232d">
+    <meta name="keywords" content="mp3 to text, mp3 to txt, convert mp3 to text" />
+    <title>
+        MP3 to Text - Convert Audio File to Text Automatically
+    </title>
+
+    <!-- Nunito Font -->
+    <style>
+        @font-face {
+            font-family: 'Nunito Sans';
+            src: url("/assets/fonts/NunitoSans-Regular.woff2") format("woff2");
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Nunito Sans';
+            src: url("/assets/fonts/NunitoSans-SemiBold.woff2") format("woff2");
+            font-weight: 600;
+        }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    </style>
+
+    <link data-n-head="ssr" rel="dns-prefetch" href="https://www.googletagmanager.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/template/img/brand/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://d2gjmsn5x43rd1.cloudfront.net" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WSDTWX8");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Maestra",
+            "url": "https://maestra.ai/",
+            "logo": "https://maestra.ai/assets/template/img/svg/icons/navLogoDark.svg",
+            "sameAs": [
+                "https://www.facebook.com/MaestraAI/",
+                "https://twitter.com/maestraAI",
+                "https://www.linkedin.com/company/maestraai"
+            ]
+        }
+        
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://maestra.ai/"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://maestra.ai/tools/"
+          },{
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Audio To Text",
+            "item": "https://maestra.ai/tools/audio-to-text"
+          },{
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Convert MP3 To Text"
+          }]
+        }
+        </script>
+
+    <!-- Schema -->
+
+
+    <link rel="stylesheet" href="/assets/template/css/reset.css">
+    <link rel="stylesheet" href="/assets/template/css/fonts.css">
+    <link rel="stylesheet" href="/assets/template/css/style.css">
+</head>
+
+<body class="header-over">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSDTWX8" height="0" width="0"
+            style="display: none; visibility: hidden;"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <header id="ms-header" class="fullsize">
+        <div class="header-in container">
+            <div class="ms-logo">
+                <a href="/" title="Maestra Home"><span class="icon-logo"><span class="path1"></span><span
+                            class="path2"></span><span class="path3"></span><span class="path4"></span><span
+                            class="path5"></span><span class="path6"></span></span></a>
+            </div>
+            <div class="header-navs">
+                <nav id="ms-nav">
+                    <ul>
+                        <li class="has-child">
+                            <span class="solid-menu"><a href="https://maestra.ai/tools">Tools</a></span>
+                            <div class="mega-submenu">
+                                <div class="mega-submenu-in fullsize">
+                                    <div class="mega-fullrow fullsize">
+                                        <a href="https://maestra.ai/tools/audio-to-text">
+                                            <span class="item-icon"><span class="icon-doc"><span
+                                                        class="path1"></span><span class="path2"></span><span
+                                                        class="path3"></span><span class="path4"></span><span
+                                                        class="path5"></span><span class="path6"></span><span
+                                                        class="path7"></span><span class="path8"></span><span
+                                                        class="path9"></span><span class="path10"></span><span
+                                                        class="path11"></span><span class="path12"></span><span
+                                                        class="path13"></span><span class="path14"></span><span
+                                                        class="path15"></span></span></span>
+                                            <span class="item-detail">
+                                                <span class="submenu-title">Transcription</span>
+                                                <p>Automatically turn your audio and video files into text</p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="mega-fullrow fullsize">
+                                        <a href="https://maestra.ai/tools/subtitle-generator">
+                                            <span class="item-icon"><span class="icon-desktop"><span
+                                                        class="path1"></span><span class="path2"></span><span
+                                                        class="path3"></span><span class="path4"></span><span
+                                                        class="path5"></span><span class="path6"></span></span></span>
+                                            <span class="item-detail">
+                                                <span class="submenu-title">Subtitle/Caption</span>
+                                                <p>Automatically caption your videos into native and foreign languages
+                                                </p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="mega-fullrow fullsize">
+                                        <a href="https://maestra.ai/tools/video-dubber">
+                                            <span class="item-icon"><span class="icon-Chat"><span
+                                                        class="path1"></span><span class="path2"></span><span
+                                                        class="path3"></span><span class="path4"></span><span
+                                                        class="path5"></span></span></span>
+                                            <span class="item-detail">
+                                                <span class="submenu-title">Voiceover</span>
+                                                <p>Automatically voiceover and edit your videos into foreign languages
+                                                </p>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <ul class="submega-nav">
+                                        <li><a href="#how-it-works">How It Works</a></li>
+                                        <li><a href="https://maestra.ai/#maestra-cloud">MaestraCloud</a></li>
+                                        <li><a href="https://maestra.ai/tools/audio-to-text">Audio to Text</a></li>
+                                        <li><a href="https://maestra.ai/tools/video-to-text">Video to
+                                                Text</a></li>
+                                        <li><a href="https://maestra.ai/tools/subtitle-translator">Subtitle
+                                                Translator</a></li>
+                                        <li><a href="https://maestra.ai/languages">Languages</a></li>
+                                        <li><a href="https://maestra.ai/pricing">Pricing</a></li>
+                                        <li><a
+                                                href="https://maestra.ai/tools/video-to-text/youtube-transcript-generator">YouTube
+                                                Transcript Generator</a></li>
+                                        <li><a href="https://maestra.ai/tools/video-translator">Video Translator</a>
+                                        </li>
+                                        <li><a href="https://maestra.ai/tools/podcast-transcript-generator">Podcast
+                                                Transcript Generator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="https://maestra.ai/blogs">Blog</a></li>
+                        <li><a href="https://maestra.ai/pricing">Pricing</a></li>
+                        <li><a rel="noopener" href="https://maestrahelp.zendesk.com/">FAQ</a></li>
+                        <li><a href="https://maestra.ai/contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav id="ms-side-nav">
+                    <ul>
+                        <li class="btn-shape"><a target="_blank" href="https://app.maestra.ai/signup">Get Started
+                                Free</a></li>
+                        <li class="demo-request"><a target="_blank" href="https://maestra.ai/book-a-demo">Request
+                                a Demo</a></li>
+                        <li class="login-menu"><a target="_blank" href="https://app.maestra.ai/login">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <span class="menuicon"><i class="icon icon-menu"></i></span>
+        </div>
+        <span class="overlay"></span>
+    </header>
+    <main id="main-area" class="fullsize">
+        <section id="hero-home" class="tr-youtube dark-bg fullsize">
+            <div class="breadcrumb-parent darkbg fullsize">
+                <ul class="breadcrumb-row container">
+                    <li><a href="https://maestra.ai">Home</a></li>
+                    <li><i class="icon icon-cheveron-right"></i></li>
+                    <li><a href="https://maestra.ai/tools">Tools</a></li>
+                    <li><i class="icon icon-cheveron-right"></i></li>
+                    <li><a href="https://maestra.ai/tools/audio-to-text">Audio To Text</a></li>
+                    <li><i class="icon icon-cheveron-right"></i></li>
+                    <li>Convert MP3 to Text</li>
+                </ul>
+            </div>
+            <div class="hero-home-in container">
+                <h1>Convert MP3 to Text</h1>
+                <p>Maestra converts the speech from your MP3 (.mp3) file to text automatically in 80+ languages
+                    including Spanish, English, Italian and French.</p>
+                <div class="btn-box fullsize" onclick="document.getElementById('filesInputTranscription').click();"
+                    id="filesInputTranscriptionContainer">
+                    <a class="btn-start-free" style="cursor: pointer;">Browse MP3 File <i
+                            class="icon icon-arrow-right"></i>
+                        <input type="file" style="display: none" title="Files Input" name="filesInputTranscription"
+                            id="filesInputTranscription" onchange="readURL(this, 'transcription');"
+                            accept="video/*, audio/*" />
+                    </a>
+                </div>
+            </div>
+
+            <section id="sm-video" class="yt-full fullsize">
+                <div class="youtube-box">
+                    <div class="youtube-parent" data-embed="phDVdjR72Wc">
+                        <div class="play-button"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="hero-sep">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path fill="#FFF" d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+                </svg>
+            </div>
+        </section>
+        <section id="dash-preview" class="fullsize">
+            <figure class="figure">
+                <img alt="" src="https://d2gjmsn5x43rd1.cloudfront.net/assets/screenshots/transcript-editor.webp"
+                    width="996" height="614" class="shadow-img">
+            </figure>
+            <figure class="figure">
+                <img alt="" src="https://d2gjmsn5x43rd1.cloudfront.net/assets/screenshots/subtitle-editor.webp"
+                    width="996" height="614" class="shadow-img">
+            </figure>
+        </section>
+
+        <section id="card-sections" class="mt-60 sec-row fullsize">
+            <div class="container">
+                <div class="cs-holder fullsize">
+                    <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" x="0px" y="0px" viewBox="0 0 361.1 384.8"
+                        style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve"
+                        class="injected-svg svg-inject fill-dark">
+                        <path
+                            d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,238,15.6,288.9 S86.8,355.4,53.1,266.7z">
+                        </path>
+                    </svg>
+                    <svg class="svg-btm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1" x="0px" y="0px" viewBox="0 0 361.1 384.8"
+                        style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve"
+                        class="injected-svg svg-inject fill-primary">
+                        <path
+                            d="M53.1,266.7C19.3,178-41,79.1,41.6,50.1S287.7-59.6,293.8,77.5c6.1,137.1,137.8,238,15.6,288.9 S86.8,355.4,53.1,266.7z">
+                        </path>
+                    </svg>
+                    <div class="inner-card-v">
+                        <h2>Transcribe MP3 to Text with Maestra</h2>
+                        <p>
+                            MP3 format is one of the most-used audio file formats in the world. From the songs we listen
+                            to
+                            every day to recordings of lectures, everyone uses the MP3 format in their daily lives one
+                            way
+                            or another.
+                        </p>
+                        <figure class="figure mb-5 col-8">
+                            <img alt="Maestra's editor has advanced features that provide additional adjusting after you transcribe the mp3 file."
+                                data-src="https://d2gjmsn5x43rd1.cloudfront.net/assets/screenshots/mp3-to-text.webp"
+                                width="852" height="442" class="img-fluid card-img">
+                        </figure>
+                        <p>
+                            Maestra allows you to instantly convert MP3 to text, whether you need it for personal use or
+                            your business, Maestra’s MP3 to text converter will be a life-changing addition. Perhaps you
+                            run
+                            a business where you need certain audio in text format. Upload your files to Maestra and get
+                            the
+                            transcriptions from our converter. From then on, you can edit the text to obtain the outcome
+                            you
+                            need. With advanced editing options and a simple interface, everyone can easily transcribe
+                            MP3
+                            files to text. Try Maestra’s MP3 to text software for free!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="howto" class="mt-30 sec-row fullsize">
+            <div class="container">
+                <div class="howto-inner">
+                    <h2>How to convert MP3 to Text?</h2>
+                    <div class="stp-row fullsize">
+                        <span class="stp-nm">1</span>
+                        <h3>Upload to instantly transcribe MP3 files</h3>
+                        <p>Upload the MP3 file and see the transcription within seconds. No credit card or signup
+                            required.</p>
+                    </div>
+                    <div class="stp-row fullsize">
+                        <span class="stp-nm">2</span>
+                        <h3>Multiple ways to upload</h3>
+                        <p>Easily import your audio or video files from Dropbox, Google Drive, Youtube link, Instagram
+                            or browse locally from your computer and pick Arabic as the audio language.</p>
+                    </div>
+                    <div class="stp-row fullsize">
+                        <span class="stp-nm">3</span>
+                        <h3>View and edit easily</h3>
+                        <p>
+                            Your file will be transcribed to Arabic text automatically in just a few minutes. Easily
+                            proofread, edit your audio transcript or subtitles, make any necessary changes and
+                            optionally translate to 80+ languages.
+                        </p>
+                    </div>
+                    <div class="stp-row fullsize">
+                        <span class="stp-nm">4</span>
+                        <h3>Export or share</h3>
+                        <p>Share automatically generated Arabic audio transcription, subtitles or captions online, or
+                            through email. You can also export your audio transcript or subtitles in PDF(.pdf),
+                            WORD(docx), TXT(.txt), SubRip (.srt), WebVTT (.vtt), Scenarist (.scc), Spruce (.stl),
+                            Cheetah (.cap), Avid DS (.txt).</p>
+                    </div>
+                    <div class="btn-box center-a mt-30 fullsize"
+                        onclick="document.getElementById('filesInputTranscription').click();"
+                        id="filesInputTranscriptionContainer">
+                        <a class="btn-start-free btn-blue" style="cursor: pointer;">Start Free Trial
+                            Now <i class="icon icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq-section" class="center-title sec-row fullsize">
+            <h2>Frequently Asked Questions</h2>
+            <div class="container">
+                <div class="faq-row close">
+                    <h3 class="faq-row-title">What is Maestra?</h3>
+                    <p>
+                        Maestra is an automatic transcription, captioning, and voiceover platform that allows you to
+                        automatically turn your audio and video files into your desired format. Our automatic AI
+                        processor will transcribe, translate, caption, or voiceover your files and send them back to you
+                        incredibly fast. Edit your videos in our advanced, easy-to-use and collaborative editor, then
+                        save and share them with your audience! If you have any questions about how Maestra works, we’re
+                        more than happy to <a href="https://maestra.ai/book-a-demo">walk you through a demo</a>.
+                    </p>
+                </div>
+                <div class="faq-row close">
+                    <h3 class="faq-row-title">Can I convert MP3 files to text?</h3>
+                    <p>
+                        Yes, you can convert audio files to text using <a
+                            href="https://maestra.ai/tools/audio-to-text">Maestra audio to text converter</a>. Take
+                        advantage of our automatic speech recognition engine and benefit from Maestra's transcription
+                        service. Our automatic transcription software is super accurate and it allows you to convert
+                        audio and video files to text and obtain machine generated transcripts in just a few minutes.
+                        Transcription and subtitling services like Maestra are a huge step forward from manually typing
+                        a full transcription.
+                    </p>
+                </div>
+                <div class="faq-row close">
+                    <h3 class="faq-row-title">Is it free to transcribe MP3 to text?</h3>
+                    <p>
+                        Yes, it is! Convert MP3 to text with Maestra's free trial! Just upload your file into Maestra
+                        and convert your MP3 files to text in no time, edit and export as you wish.
+                    </p>
+                </div>
+                <div class="faq-row close">
+                    <h3 class="faq-row-title">Can I export my audio files to different formats?</h3>
+                    <p>
+                        Of course, after you have successfully converted your MP3 files to text with Maestra’s
+                        transcription software, you can export your files to formats such as PDF(.pdf), WORD(docx),
+                        TXT(.txt), SubRip (.srt), WebVTT (.vtt), Scenarist (.scc), Spruce (.stl), Cheetah (.cap) and
+                        Avid DS (.txt).
+                    </p>
+                </div>
+                <div class="faq-row close">
+                    <h3 class="faq-row-title">Does it take time to convert an audio file?</h3>
+                    <p>
+                        Converting your MP3 files to text takes no time with Maestra. Upload your files by selecting
+                        them from folders or dragging them onto the uploading section. It will only take a few minutes
+                        to acquire your transcription. Try converting OPUS to text with Maestra's free trial!
+                    </p>
+                </div>
+                <div class="faq-row close">
+                    <h3 class="faq-row-title">What languages does Maestra support?</h3>
+                    <p>
+                        You can see all the languages supported by Maestra by clicking <a
+                            href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text/#langs">here</a>.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="testimonial" class="sec-row center-title fullsize">
+            <div class="container">
+                <span class="sc-label">Customer Reviews</span>
+                <h2>What people are saying about Maestra MP3 to text converter</h2>
+                <div class="rating-items fullsize">
+                    <div class="g2-card rating-card">
+                        <div class="rating-card-in fullsize">
+                            <div class="fullsize"><img loading="lazy"
+                                    data-src="/assets/template/img/svg/icons/G2_Crowd_logo.svg" alt="g2" /></div>
+                            <!-- Rating -->
+                            <span class="static-rating fullsize">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <!-- Info -->
+                            <span class="rating-overall fullsize">4.7 out of 5 stars</span>
+                            <div class="fullsize"><a rel="noopener" href="https://www.g2.com/products/maestra/reviews"
+                                    target="_blank">Read all reviews</a></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="rating-card-in fullsize">
+                            <span class="review-title fullsize">"The All In One "over the top" turnkey solution for
+                                Automatic Transcripts, Subtitles and Voiceovers"</span>
+                            <p class="review-text fullsize">What comes to mind as Maestra being the go-to solution for
+                                our company is that it's such a time and money saver.</p>
+                            <!-- Rating -->
+                            <span class="static-rating fullsize">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <div class="fullsize"><a rel="noopener"
+                                    href="https://www.g2.com/products/maestra/reviews/maestra-review-4627444"
+                                    target="_blank">Read full reviews</a></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="rating-card-in fullsize">
+                            <span class="review-title fullsize">"perfect for anything transcript needs"</span>
+                            <p class="review-text fullsize">The best thing about Maestra is how well it creates
+                                transcripts. It's so useful for me. It makes my day a lot easier.</p>
+                            <!-- Rating -->
+                            <span class="static-rating fullsize">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <div class="fullsize"><a rel="noopener"
+                                    href="https://www.g2.com/products/maestra/reviews/maestra-review-4623732"
+                                    target="_blank">Read full reviews</a></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="rating-card-in fullsize">
+                            <span class="review-title fullsize">"MAESTRA IS THE GO-TO FOR SUBTITLING. LOVE IT!"
+                            </span>
+                            <p class="review-text fullsize">Maestra is just amazing! We were able to produce subtitles
+                                in multiple languages assisted by their platform. Multiple users were able to work and
+                                collaborate thanks to their super user-friendly interface.</p>
+                            <!-- Rating -->
+                            <span class="static-rating fullsize">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <!-- Info -->
+                            <div class="fullsize"><a rel="noopener"
+                                    href="https://www.g2.com/products/maestra/reviews/maestra-review-4618818"
+                                    target="_blank">Read full reviews</a></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="rating-card-in fullsize">
+                            <span class="review-title fullsize">"Master the Media with Maestra"</span>
+                            <p class="review-text fullsize">The best side of this product is auto subtitling. And most
+                                importantly, it supports multiple languages.</p>
+                            <!-- Rating -->
+                            <span class="static-rating fullsize">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star">☆</span>
+                            </span>
+                            <div class="fullsize"><a rel="noopener"
+                                    href="https://www.g2.com/products/maestra/reviews/maestra-review-4851118"
+                                    target="_blank">Read full reviews</a></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="rating-card-in fullsize">
+                            <span class="review-title fullsize">"Pocket Friendly Content Creator"</span>
+                            <p class="review-text fullsize">It is cloud-based. It allows to automatically transcribe,
+                                caption, and voiceover video and audio files to hundreds of languages. It helps to reach
+                                and educate people all around the globe.</p>
+                            <!-- Rating -->
+                            <span class="static-rating fullsize">
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                                <span class="star voted">★</span>
+                            </span>
+                            <div class="fullsize"><a rel="noopener"
+                                    href="https://www.g2.com/products/maestra/reviews/maestra-review-4618818"
+                                    target="_blank">Read full reviews</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside id="langs" class="center-title container">
+            <h2>You Might Also Like</h2>
+            <div class="fav-sec flex-box-holder fullsize">
+                <div class="half-size">
+                    <h3>Formats</h3>
+                    <ul>
+                        <li><a href="https://maestra.ai/tools/video-to-text/convert-mov-to-text" target="_blank">Convert
+                                MOV to
+                                Text</a></li>
+                        <li><a href="https://maestra.ai/tools/video-to-text/convert-mp4-to-text" target="_blank">Convert
+                                MP4 to
+                                Text</a></li>
+                        <li><a href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text" target="_blank">Convert
+                                MP3 to
+                                Text</a></li>
+                        <li><a href="https://maestra.ai/tools/audio-to-text/convert-wav-to-text" target="_blank">Convert
+                                WAV to
+                                Text</a></li>
+                        <li><a href="https://maestra.ai/tools/video-to-text/convert-avi-to-text" target="_blank">Convert
+                                AVI to
+                                Text</a></li>
+                        <li><a href="https://maestra.ai/tools/video-to-text/convert-mkv-to-text" target="_blank">Convert
+                                MKV to
+                                Text</a></li>
+                    </ul>
+                </div>
+                <div class="half-size">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li class="font-weight-bold mb-1"><a
+                                href="https://maestra.ai/tools/audio-to-text/transcribe-english"
+                                target="_blank">Transcribe
+                                English</a></li>
+                        <li class="font-weight-bold mb-1"><a
+                                href="https://maestra.ai/tools/audio-to-text/transcribe-finnish"
+                                target="_blank">Transcribe
+                                Finnish</a></li>
+                        <li class="font-weight-bold mb-1"><a
+                                href="https://maestra.ai/tools/audio-to-text/transcribe-french"
+                                target="_blank">Transcribe French</a></li>
+                        <li class="font-weight-bold mb-1"><a
+                                href="https://maestra.ai/tools/audio-to-text/transcribe-german"
+                                target="_blank">Transcribe German</a></li>
+                        <li class="font-weight-bold mb-1"><a
+                                href="https://maestra.ai/tools/audio-to-text/transcribe-italian"
+                                target="_blank">Transcribe
+                                Italian</a></li>
+                        <li class="font-weight-bold mb-1"><a
+                                href="https://maestra.ai/tools/audio-to-text/transcribe-spanish"
+                                target="_blank">Transcribe
+                                Spanish</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+    <footer id="ms-footer" class="dark-footer fullsize">
+        <aside id="hook-cta" class="sec-row fullsize">
+            <div class="container">
+                <h2>Transcripts. Subtitles. Voiceovers. In Minutes.</h2>
+                <p>Highly Accurate Speech-to-Text. Advanced Text Editor. Translate 80+ languages.</p>
+                <a href="https://app.maestra.ai/signup">Get Started Free</a>
+            </div>
+        </aside>
+        <div class="container">
+            <div class="main-footer fullsize">
+                <div class="ms-col footer-col">
+                    <img alt="maestra logo"
+                        data-src="https://d2gjmsn5x43rd1.cloudfront.net/assets/logos/maestra-logo.webp" />
+                    <span class="ms-name fullsize">Maestra</span>
+                    <p>With Maestra you can automatically: transcribe, caption, and voiceover your video and audio files
+                        into more than 80 languages, so you can reach millions more people all over the world.</p>
+                    <a href="https://app.maestra.ai/signup">Get Started Free</a>
+                    <ul class="social-medias">
+                        <li><a rel="noopener" href="https://twitter.com/maestraAI"><i class="icon icon-twitter"></i></a>
+                        </li>
+                        <li><a rel="noopener" href="https://www.linkedin.com/company/maestraai"><i
+                                    class="icon icon-linkedin"></i></a></li>
+                        <li><a rel="noopener" href="https://www.facebook.com/MaestraAI/"><i
+                                    class="icon icon-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <span class="f-col-title">Tools</span>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://maestra.ai/tools/audio-to-text">Transcription</a>
+                        </li>
+
+                        <li><a href="https://maestra.ai/tools/video-dubber">Voiceover</a></li>
+                        <li>
+                            <a href="https://maestra.ai/tools/audio-to-text">Audio to Text</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/subtitling-software-for-translators">Subtitling Tool For
+                                Translators</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/subtitle-generator">Subtitle Generator</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/video-dubber">Video Dubber</a>
+                        </li>
+                        <li><a href="https://maestra.ai/tools/video-to-text/youtube-transcript-generator">For
+                                Youtubers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <span class="f-col-title">Company</span>
+                    <ul class="footer-links">
+                        <li><a href="https://maestra.ai/help">Help</a></li>
+                        <li><a href="https://maestrahelp.zendesk.com">FAQ</a></li>
+                        <li><a href="https://maestra.ai/blogs">Blog</a></li>
+                        <li><a href="https://maestra.ai/terms-of-service">Terms</a></li>
+                        <li><a href="https://maestra.ai/privacy-policy">Privacy</a></li>
+                        <li><a href="https://maestra.ai/sitemap">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <span class="f-col-title">Formats</span>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://maestra.ai/tools/audio-to-text/convert-mp3-to-text">Convert MP3 to Text</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/video-to-text/convert-mp4-to-text">Convert MP4 to Text</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/audio-to-text/convert-aac-to-text">Convert AAC to Text</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/video-to-text/convert-mov-to-text">Convert MOV to Text</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/audio-to-text/convert-m4a-to-text">Convert M4A to Text</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/subtitle-generator/srt-generator">SRT Generator</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/tools/subtitle-generator/vtt-generator">VTT Generator</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom fullsize">
+                <div class="fb-right">
+                    <ul class="fb-menu">
+                        <li>
+                            <a href="https://maestra.ai/security">Security</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/about">About</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://maestra.ai/terms-of-service">Terms</a>
+                        </li>
+                        <li>
+                            <a class="nav-link pr-0" href="https://maestra.ai/privacy-policy">Privacy</a>
+                        </li>
+                        <li class="fb-lang">
+                            <span class="active-lang"><img alt="us" data-src="/assets/template/img/svg/flags/us.svg">
+                                English</span>
+                            <ul class="submenu-lang">
+                                <li><a href="/ar/tools/audio-to-text/convert-mp3-to-text"><img alt="sa"
+                                            data-src="/assets/template/img/svg/flags/sa.svg"> عربي</a></li>
+                                <li><a href="/da/vaerktojer/lyd-til-text/konverter-mp3-til-tekst"><img alt="dk"
+                                            data-src="/assets/template/img/svg/flags/dk.svg"> Dansk</a></li>
+                                <li><a href="/de/werkzeuge/audio-zu-text/konvertieren-sie-mp3-in-text"><img alt="de"
+                                            data-src="/assets/template/img/svg/flags/de.svg"> Deutsch</a></li>
+                                <li><a href="/tools/audio-to-text/convert-mp3-to-text"><img alt="us"
+                                            data-src="/assets/template/img/svg/flags/us.svg"> English</a></li>
+                                <li><a href="/es/herramientas/audio-a-texto/convertir-mp3-a-texto"><img alt="es"
+                                            data-src="/assets/template/img/svg/flags/es.svg"> Español</a></li>
+                                <li><a href="/fi/tyokalut/audio-en-texte/muunna-mp3-tekstiksi"><img alt="fi"
+                                            data-src="/assets/template/img/svg/flags/fi.svg"> Suomi</a></li>
+                                <li><a href="/fr/outils/audio-en-texte/convertir-mp3-en-text"><img alt="fr"
+                                            data-src="/assets/template/img/svg/flags/fr.svg"> Français</a></li>
+                                <li><a href="/it/strumenti/audio-a-testo/converti-mp3-in-testo"><img alt="it"
+                                            data-src="/assets/template/img/svg/flags/it.svg"> Italiano</a></li>
+                                <li><a href="/ja/tools/audio-to-text/convert-mp3-to-text"><img alt="jp"
+                                            data-src="/assets/template/img/svg/flags/jp.svg"> 日本語</a></li>
+                                <li><a href="/ko/tools/audio-to-text/convert-mp3-to-text"><img alt="kr"
+                                            data-src="/assets/template/img/svg/flags/kr.svg"> 한국어</a></li>
+                                <li><a href="/pl/narzedzia/audio-na-tekst/konwertuj-mp3-na-tekst"><img alt="pl"
+                                            data-src="/assets/template/img/svg/flags/pl.svg"> Polski</a></li>
+                                <li><a href="/pt/ferramentas/transcricao-de-audio/converter-mp3-para-texto"><img
+                                            alt="pt" data-src="/assets/template/img/svg/flags/pt.svg"> Português</a>
+                                </li>
+                                <li><a href="/sv/verktyg/audio-to-text/convert-mp3-to-text"><img alt="se"
+                                            data-src="/assets/template/img/svg/flags/se.svg"> Svenska</a></li>
+                                <li><a href="/zh/tools/audio-to-text/convert-mp3-to-text"><img alt="cn"
+                                            data-src="/assets/template/img/svg/flags/cn.svg"> 中文</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fb-copy">
+                    <p>© 2023 Katara Tech, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start of HubSpot Trigger -->
+        <div class="hubspot-trigger" id="hubspot-trigger" onClick="loadAndOpenHubspotChat()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="30"
+                viewBox="0 0 39 37" class="conversations-visitor-open-icon">
+                <defs>
+                    <path id="conversations-visitor-open-icon-path-10.7444407449989736"
+                        d="M31.4824242 24.6256121L31.4824242 0.501369697 0.476266667 0.501369697 0.476266667 24.6256121z">
+                    </path>
+                </defs>
+                <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                    <g transform="translate(-1432 -977) translate(1415.723 959.455)">
+                        <g transform="translate(17 17)">
+                            <g transform="translate(6.333 .075)">
+                                <path fill="#ffffff"
+                                    d="M30.594 4.773c-.314-1.943-1.486-3.113-3.374-3.38C27.174 1.382 22.576.5 15.36.5c-7.214 0-11.812.882-11.843.889-1.477.21-2.507.967-3.042 2.192a83.103 83.103 0 019.312-.503c6.994 0 11.647.804 12.33.93 3.079.462 5.22 2.598 5.738 5.728.224 1.02.932 4.606.932 8.887 0 2.292-.206 4.395-.428 6.002 1.22-.516 1.988-1.55 2.23-3.044.008-.037.893-3.814.893-8.415 0-4.6-.885-8.377-.89-8.394">
+                                </path>
+                            </g>
+                            <g fill="#ffffff" transform="translate(0 5.832)">
+                                <path
+                                    d="M31.354 4.473c-.314-1.944-1.487-3.114-3.374-3.382-.046-.01-4.644-.89-11.859-.89-7.214 0-11.813.88-11.843.888-1.903.27-3.075 1.44-3.384 3.363C.884 4.489 0 8.266 0 12.867c0 4.6.884 8.377.889 8.393.314 1.944 1.486 3.114 3.374 3.382.037.007 3.02.578 7.933.801l2.928 5.072a1.151 1.151 0 001.994 0l2.929-5.071c4.913-.224 7.893-.794 7.918-.8 1.902-.27 3.075-1.44 3.384-3.363.01-.037.893-3.814.893-8.414 0-4.601-.884-8.378-.888-8.394">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <!-- End of HubSpot Trigger -->
+
+    </footer>
+
+    <script src="/assets/template/js/lazy-maestra.js" defer></script>
+    <script data-src="/assets/template/js/master.js" src="/assets/template/js/master.js" data-type='lazy' async
+        defer></script>
+    <script src="/assets/template/js/maestra.js"></script>
+
+</body>
+
+</html>

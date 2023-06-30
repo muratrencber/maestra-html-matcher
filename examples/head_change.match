@@ -1,6 +1,5 @@
 %head% <-> %%:
     %title% = %title%
     %meta[name="description"]%.content = %meta[name="description"]%.content
-    %meta[name="description"]%.content = %meta[name="description"]%.content
     %meta[property="og:title"]%.content = %meta[property="og:title"]%.content
     %meta[property="og:description"]%.content = %meta[property="og:description"]%.content

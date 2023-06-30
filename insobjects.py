@@ -86,14 +86,31 @@ class CSSSelector(Expression):
 
     def get_elem_value(self, elem: bs):
         if self.target == "innerHTML":
-            return elem.contents
+            cloned_contents = []
+            for c in elem.contents:
+                log("cloning", c, "with name", c.name)
+                if c.name is None:
+                    cloned_contents.append(c)
+                    continue
+                try:
+                    clonedtags = bs(str(c), features="lxml").body.contents
+                    for ct in clonedtags:
+                        cloned_contents.append(ct)
+                except:
+                    cloned_contents.append(c)
+            return cloned_contents
         if self.target == "text":
             return "".join([c.text for c in elem.children if c.name is None])
         return elem.attrs[self.target]
 
     def set_elem_value(self, elem: bs, value):
         if self.target == "innerHTML":
-            elem.contents = value
+            log("set innerHTML of tag", elem.name)
+            log("new elems:", value)
+            elem.clear()
+            for c in value:
+                log("appending", c, "type:", type(c))
+                elem.append(c)
         elif self.target == "text":
             elemtexts = [
                 c for c in elem.children if c.name is None and c.text.strip() != ""]

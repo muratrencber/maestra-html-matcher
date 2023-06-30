@@ -1,33 +1,53 @@
 {
-    "name": "한국어",
-    "flag": "kr",
-    "button_text":"찾아보기 파일",
-    "notice_text":"* 신용카드나 계좌가 필요하지 않습니다.",
-    "breadcrumbs":{
-        "home":{
-            "path":"ko",
-            "display":"홈페이지"
-        },
-        "tools":{
-            "path":"ko/tools",
-            "display":"도구"
-        },
-        "video-dubber":{
-            "path":"ko/tools/video-dubber",
-            "display":"비디오 더버"
-        },
-        "subtitle-translator":{
-            "path":"ko/tools/subtitle-translator",
-            "display":"자막 번역기"
-        }
+  "name": "한국어",
+  "flag": "kr",
+  "button_text": "찾아보기 파일",
+  "notice_text": "* 신용카드나 계좌가 필요하지 않습니다.",
+  "breadcrumbs": {
+    "home": {
+      "path": "ko",
+      "display": "홈페이지"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. 판권 소유. ",
-        "subtitle_translator": "자막 번역기" ,
-        "transcribe_youtube":  "YouTube 동영상 전사" ,
-        "srt_generator":       "SRT 제너레이터" ,
-        "transcribe_arabic":   "아랍어 전사" ,
-        "transcribe_spanish":  "스페인어 전사" ,
-        "transcribe_french":   "프랑스어 전사"
+    "tools": {
+      "path": "ko/tools",
+      "display": "도구"
+    },
+    "video-dubber": {
+      "path": "ko/tools/video-dubber",
+      "display": "비디오 더버"
+    },
+    "subtitle-translator": {
+      "path": "ko/tools/subtitle-translator",
+      "display": "자막 번역기"
+    },
+    "audio-to-text": {
+      "path": "ko/tools/audio-to-text",
+      "display": "오디오를 텍스트로"
+    },
+    "video-translator": {
+      "path": "ko/tools/video-translator",
+      "display": "비디오 번역기"
+    },
+    "convert-mp3-to-text": {
+      "path": "ko/tools/audio-to-text/convert-mp3-to-text",
+      "display": "MP3를 텍스트로 변환"
+    },
+    "video-to-text": {
+      "path": "ko/tools/video-to-text",
+      "display": "비디오를 텍스트로"
+    },
+    "convert-mp4-to-text": {
+      "path": "ko/tools/video-to-text/convert-mp4-to-text",
+      "display": "mp4를 텍스트로 변환"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. 판권 소유. ",
+    "subtitle_translator": "자막 번역기",
+    "transcribe_youtube": "YouTube 동영상 전사",
+    "srt_generator": "SRT 제너레이터",
+    "transcribe_arabic": "아랍어 전사",
+    "transcribe_spanish": "스페인어 전사",
+    "transcribe_french": "프랑스어 전사"
+  }
 }

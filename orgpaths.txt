@@ -1,0 +1,13 @@
+ar,..\..\working\rebrand\public\ar\convert-mp4-to-text.html
+da,..\..\working\rebrand\public\da\mp4-til-tekst.html
+de,..\..\working\rebrand\public\de\mp4-zu-text.html
+es,..\..\working\rebrand\public\es\convertir-mp4-a-texto.html
+fi,..\..\working\rebrand\public\fi\mp4-tekstiksi.html
+fr,..\..\working\rebrand\public\fr\convertir-mp4-en-texte.html
+it,..\..\working\rebrand\public\it\da-mp4-a-testo.html
+ja,..\..\working\rebrand\public\ja\convert-mp4-to-text.html
+ko,..\..\working\rebrand\public\ko\convert-mp4-to-text.html
+pl,..\..\working\rebrand\public\pl\mp4-na-tekst.html
+pt,..\..\working\rebrand\public\pt\mp4-para-texto.html
+sv,..\..\working\rebrand\public\sv\convert-mp4-to-text.html
+zh,..\..\working\rebrand\public\zh\convert-mp4-to-text.html

@@ -1,0 +1,39 @@
+
+%body > footer% <-> %footer#footer-main%:
+    %#hook-cta% <-> %div[class="row justify-content-center"]%:
+        %h2% = %h3%
+        %p%.text = %p%.text
+        %a%.text = %a%.text
+    %div.fb-copy p%.text = {footer.copy_text}
+    %div.main-footer.fullsize% <-> %div[class="row pt-md align-items-center justify-content-center"]%:
+        %div.ms-col% <-> %div.col-lg-4.mb-5.mb-lg-0%:
+            %span.ms-name%.text = %h5%.text
+            %p%.text = %p%.text
+            %a%.text = %a%.text
+        %div[class="footer-col"]%[0] <-> %div[class="row pt-md align-items-center justify-content-center"] > div%[1]:
+            %span%.text = %h6%.text
+            %a%[:7].text = %a%[:].text
+            %a%[:7].href = %a%[:].href
+            %a%[7].text = {footer.subtitle_translator}
+            %a%[8].text = {footer.transcribe_youtube}
+            %a%[9].text = {footer.srt_generator}
+        %div[class="footer-col"]%[1] <-> %div[class="row pt-md align-items-center justify-content-center"] >div%[2]:
+            %span%.text = %h6%.text
+            %a%[:].text = %a%[:].text
+            %a%[:].href = %a%[:].href
+        %div[class="footer-col"]%[2] <-> %div[class="row pt-md align-items-center justify-content-center"] >div%[3]:
+            %span%.text = %h6%.text
+            %a%[0].text = %a%[0].text
+            %a%[1].text = %a%[1].text
+            %a%[2].text = {footer.transcribe_arabic}
+            %a%[3].text = {footer.transcribe_spanish}
+            %a%[4].text = {footer.transcribe_french}
+    %div[class="footer-bottom fullsize"]% <-> %div[class="row align-items-center justify-content-md-between py-4 mt-4 border-top mx-0"]%:
+        %ul li a%[0] = %div[class="col-md-6"] li[class="nav-item"] a%[2]
+        %ul li a%[1] = %div[class="col-md-6"] li[class="nav-item"] a%[1]
+        %ul li a%[2] = %div[class="col-md-6"] li[class="nav-item"] a%[0]
+        %li.fb-lang% <-> %%:
+            %span.active-lang img%.alt = {environ.lang}
+            %span.active-lang img%.data-src = f"/assets/template/img/svg/flags/{flag}.svg"
+            %span.active-lang img%.src = f"/assets/template/img/svg/flags/{flag}.svg"
+            %span.active-lang%.text = {name}

@@ -1,33 +1,53 @@
 {
-    "name": "日本語",
-    "flag": "jp",
-    "button_text":"ファイルを参照する",
-    "notice_text":"* クレジットカードやアカウントは必要ありません",
-    "breadcrumbs":{
-        "home":{
-            "path":"ja",
-            "display":"ホームページ"
-        },
-        "tools":{
-            "path":"ja/tools",
-            "display":"ツール"
-        },
-        "video-dubber":{
-            "path":"ja/tools/video-dubber",
-            "display":"ビデオダバー"
-        },
-        "subtitle-translator":{
-            "path":"ja/tools/subtitle-translator",
-            "display":"字幕翻訳者"
-        }
+  "name": "日本語",
+  "flag": "jp",
+  "button_text": "ファイルを参照する",
+  "notice_text": "* クレジットカードやアカウントは必要ありません",
+  "breadcrumbs": {
+    "home": {
+      "path": "ja",
+      "display": "ホームページ"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. 無断複写・転載を禁じます。",
-        "subtitle_translator": "字幕翻訳者" ,
-        "transcribe_youtube":  "YouTube ビデオの文字起こし" ,
-        "srt_generator":       "SRT ジェネレーター" ,
-        "transcribe_arabic":   "アラビア語を転写する" ,
-        "transcribe_spanish":  "スペイン語の転写" ,
-        "transcribe_french":   "フランス語の転写"
+    "tools": {
+      "path": "ja/tools",
+      "display": "ツール"
+    },
+    "video-dubber": {
+      "path": "ja/tools/video-dubber",
+      "display": "ビデオダバー"
+    },
+    "subtitle-translator": {
+      "path": "ja/tools/subtitle-translator",
+      "display": "字幕翻訳者"
+    },
+    "audio-to-text": {
+      "path": "ja/tools/audio-to-text",
+      "display": "音声をテキストに変換"
+    },
+    "video-translator": {
+      "path": "ja/tools/video-translator",
+      "display": "ビデオ翻訳者"
+    },
+    "convert-mp3-to-text": {
+      "path": "ja/tools/audio-to-text/convert-mp3-to-text",
+      "display": "MP3 をテキストに変換"
+    },
+    "video-to-text": {
+      "path": "ja/tools/video-to-text",
+      "display": "ビデオからテキストへ"
+    },
+    "convert-mp4-to-text": {
+      "path": "ja/tools/video-to-text/convert-mp4-to-text",
+      "display": "mp4をテキストに変換"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. 無断複写・転載を禁じます。",
+    "subtitle_translator": "字幕翻訳者",
+    "transcribe_youtube": "YouTube ビデオの文字起こし",
+    "srt_generator": "SRT ジェネレーター",
+    "transcribe_arabic": "アラビア語を転写する",
+    "transcribe_spanish": "スペイン語の転写",
+    "transcribe_french": "フランス語の転写"
+  }
 }

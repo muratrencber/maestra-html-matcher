@@ -1,0 +1,91 @@
+#addict f"../langdata/{environ.lang}.json"
+
+#rreplace "\"../../assets" "\"/assets"
+#rreplace "\"../assets" "\"/assets"
+#treplace "\"../../assets" "\"/assets"
+#treplace "\"../assets" "\"/assets"
+#rreplace " ➜" ""
+
+#tremove %section.yt-full%
+
+#treplace "\"name\": \"Home\"" f"\"name\": \"{breadcrumbs.home.display}\""
+#treplace "\"item\": \"https://maestra.ai/\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.home.path}/\""
+#treplace "\"name\": \"Tools\"" f"\"name\": \"{breadcrumbs.tools.display}\""
+#treplace "\"item\": \"https://maestra.ai/tools/\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.tools.path}/\""
+#treplace "\"name\": \"Audio To Text\"" f"\"name\": \"{breadcrumbs.audio-to-text.display}\""
+#treplace "\"item\": \"https://maestra.ai/tools/audio-to-text\"" f"\"item\": \"https://maestra.ai/{breadcrumbs.audio-to-text.path}/\""
+#treplace "\"name\": \"Covert MP3 To Text\"" f"\"name\": \"{breadcrumbs.convert-mp3-to-text.display}\""
+
+#translate %section#brands p%
+#translate %div.rating-card%[3]
+
+#include <../default_changes.match>
+#include <../footer_change_v2.match>
+
+%html%.lang = {environ.lang}
+%body > main% <-> %body%:
+    %ul[class="breadcrumb-row container"]% <-> %%:
+        %a%[0].href = f"https://maestra.ai/{breadcrumbs.home.path}"
+        %a%[0].text = {breadcrumbs.home.display}
+        %a%[1].href = f"https://maestra.ai/{breadcrumbs.tools.path}"
+        %a%[1].text = {breadcrumbs.tools.display}
+        %a%[2].href = f"https://maestra.ai/{breadcrumbs.audio-to-text.path}"
+        %a%[2].text = {breadcrumbs.audio-to-text.display}
+        %li%[6].text = {breadcrumbs.convert-mp3-to-text.display}
+    %div[class="hero-home-in container"]% <-> %div[class="col-lg-8 text-center"]%:
+        %h1%.text = %h1%.text
+        %h2%.text = %h2%.text
+        %p% = %p%
+        %a%.text = {button_text}
+        %p[class="requirements-notice"]%.text = {notice_text}
+    %div.inner-card-v% <-> %div[class="row align-items-center font-weight-600 text-center"]%:
+        %h2%.text = %h4%.text
+        %p%[:] = %p%[:]
+    %div.howto-inner% <-> %div[class="container card p-4 col-lg-6 justify-content-center align-items-center"]%:
+        %h2% = %h2%
+        %div.stp-row.fullsize%[:] <-> %div.row.align-items-center.p-3.mb-2%[:]:
+            %h3% = %h5%
+            %p% = %span%[1]
+        %a%.text = %a strong%.text
+    %section#faq-section% <-> %div.container.my-6%:
+        %h2% = %h2%
+        %div.faq-row%[:] <-> %div.card%[:]:
+            %h3%.text = %h5%.text
+            %p%[:] = %p%[:]
+    %section#testimonial% <-> %section[class="slice slice-lg pt-2"]%:
+        %span% = %span%
+        %h2% = %h5%
+        %div.rating-card% <-> %div[class="col-xl-2 col-lg-4 col-sm-6"]%:
+            %span.rating-overall%.text = %h5%.text
+            %a%.text = %a%.text
+        %div[class="rating-card"]%[:2] <-> %div[class="col-xl-3 col-lg-4 col-sm-6"]%[:2]:
+            %span%.text = %h5%.text
+            %p%.text = %p%.text
+            %a%.text = %a%.text
+        %div[class="rating-card"]%[3:] <-> %div[class="col-xl-3 col-lg-4 col-sm-6"]%[2:]:
+            %span%.text = %h5%.text
+            %p%.text = %p%.text
+            %a%.text = %a%.text
+    %aside#langs% <-> %section[class="slice slice-lg"]%:
+        %h2% = %h4%
+        %div.half-size%[:] <-> %ul%[:]:
+            %h3%.text = %li%[0].text
+            %li a%[:].text = %li a%[:].text
+    %div[class="ta-box solid-half"]%[:] <-> %div[class="p-3 d-flex"]%[:]:
+        %h3% = %span%
+        %p% = %p%
+    %section[id="generate-sub-2"]% <-> %section[class="slice slice-lg bg-dark"]%:
+        %h2% = %h2%
+        %div[class="add-info"]% <-> %div[class="mt-5 text-center"]%:
+            %p% = %p%
+            %a%.text = %a%.text
+    %div[class="step-no-item flex-box-holder"]%[:] <-> %div[class="media align-items-center"]%[:]:
+        %div[class="stp-dt"]% <-> %div[class="media-body"]%:
+            %h3% = %h6%
+            %p% = %span%
+    %section[id="all-in-one"] > div > div div[class="dt-sec half-size"]% <-> %div[class="container position-relative zindex-100 px-5"] > div div[class="col-lg-6 offset-xl-0"]%:
+        %span% = %span%
+        %h2% = %h3%
+        %p% = %p%
+        %a%.text = %strong%.text
+        %p%[1] = %p%[1]

@@ -1,33 +1,53 @@
 {
-    "name": "Polski",
-    "flag": "pl",
-    "button_text":"Przeglądać Plik",
-    "notice_text":"* Nie jest wymagana karta kredytowa ani konto",
-    "breadcrumbs":{
-        "home":{
-            "path":"pl",
-            "display":"Strona Główna"
-        },
-        "tools":{
-            "path":"pl/narzedzia",
-            "display":"Narzedzia"
-        },
-        "video-dubber":{
-            "path":"pl/narzedzia/dubbing-wideo",
-            "display":"Dubbing Wideo"
-        },
-        "subtitle-translator":{
-            "path":"pl/narzedzia/tlumacz-napisow",
-            "display":"Tłumacz napisów"
-        }
+  "name": "Polski",
+  "flag": "pl",
+  "button_text": "Przeglądać Plik",
+  "notice_text": "* Nie jest wymagana karta kredytowa ani konto",
+  "breadcrumbs": {
+    "home": {
+      "path": "pl",
+      "display": "Strona Główna"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. Wszelkie prawa zastrzeżone.",
-        "subtitle_translator": "Tłumacz napisów" ,
-        "transcribe_youtube":  "Transkrypcja wideo z YouTube" ,
-        "srt_generator":       "Generator SRT" ,
-        "transcribe_arabic":   "Transkrypcja po arabsku" ,
-        "transcribe_spanish":  "Transkrypcja hiszpańskiego" ,
-        "transcribe_french":   "Transkrypcja po francusku"
+    "tools": {
+      "path": "pl/narzedzia",
+      "display": "Narzedzia"
+    },
+    "video-dubber": {
+      "path": "pl/narzedzia/dubbing-wideo",
+      "display": "Dubbing Wideo"
+    },
+    "subtitle-translator": {
+      "path": "pl/narzedzia/tlumacz-napisow",
+      "display": "Tłumacz napisów"
+    },
+    "audio-to-text": {
+      "path": "pl/narzedzia/audio-na-tekst",
+      "display": "Audio na Tekst"
+    },
+    "video-translator": {
+      "path": "pl/narzedzia/tlumacz-wideo",
+      "display": "Tłumacz wideo"
+    },
+    "convert-mp3-to-text": {
+      "path": "pl/narzedzia/audio-na-tekst/konwertuj-mp3-na-tekst",
+      "display": "Konwertuj MP3 na tekst"
+    },
+    "video-to-text": {
+      "path": "pl/narzedzia/wideo-na-tekst",
+      "display": "Wideo na Tekst"
+    },
+    "convert-mp4-to-text": {
+      "path": "pl/narzedzia/wideo-na-tekst/przekonwertowac-mp4-na-tekst",
+      "display": "przekonwertować mp4 na tekst"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. Wszelkie prawa zastrzeżone.",
+    "subtitle_translator": "Tłumacz napisów",
+    "transcribe_youtube": "Transkrypcja wideo z YouTube",
+    "srt_generator": "Generator SRT",
+    "transcribe_arabic": "Transkrypcja po arabsku",
+    "transcribe_spanish": "Transkrypcja hiszpańskiego",
+    "transcribe_french": "Transkrypcja po francusku"
+  }
 }

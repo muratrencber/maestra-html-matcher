@@ -1,33 +1,53 @@
 {
-    "name": "Français",
-    "flag": "fr",
-    "button_text":"Parcourir le fichier",
-    "notice_text":"*Aucune carte de crédit ou compte requis",
-    "breadcrumbs":{
-        "home":{
-            "path":"fr",
-            "display":"Maison"
-        },
-        "tools":{
-            "path":"fr/outils",
-            "display":"Outils"
-        },
-        "video-dubber":{
-            "path":"fr/outils/doubleur-video",
-            "display":"Doubleur Vidéo"
-        },
-        "subtitle-translator":{
-            "path":"fr/outils/traducteur-de-sous-titres",
-            "display":"Traducteur de sous-titres"
-        }
+  "name": "Français",
+  "flag": "fr",
+  "button_text": "Parcourir le fichier",
+  "notice_text": "*Aucune carte de crédit ou compte requis",
+  "breadcrumbs": {
+    "home": {
+      "path": "fr",
+      "display": "Maison"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. Tous droits réservés.  ",
-        "subtitle_translator": "Traducteur de sous-titres" ,
-        "transcribe_youtube":  "Transcrire une vidéo YouTube" ,
-        "srt_generator":       "Générateur SRT" ,
-        "transcribe_arabic":   "Transcrire l'arabe" ,
-        "transcribe_spanish":  "Transcrire l'espagnol" ,
-        "transcribe_french":   "Transcrire le français"
+    "tools": {
+      "path": "fr/outils",
+      "display": "Outils"
+    },
+    "video-dubber": {
+      "path": "fr/outils/doubleur-video",
+      "display": "Doubleur Vidéo"
+    },
+    "subtitle-translator": {
+      "path": "fr/outils/traducteur-de-sous-titres",
+      "display": "Traducteur de sous-titres"
+    },
+    "audio-to-text": {
+      "path": "fr/outils/audio-en-texte",
+      "display": "Audio en Texte"
+    },
+    "video-translator": {
+      "path": "fr/outils/traducteur-video",
+      "display": "Traducteur Vidéo"
+    },
+    "convert-mp3-to-text": {
+      "path": "fr/outils/audio-en-texte/convertir-mp3-en-text",
+      "display": "Convertir MP3 en Texte"
+    },
+    "video-to-text": {
+      "path": "fr/outils/video-en-texte",
+      "display": "vidéo en texte"
+    },
+    "convert-mp4-to-text": {
+      "path": "fr/outils/video-en-texte/convertir-mp4-en-texte",
+      "display": "convertir mp4 en texte"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. Tous droits réservés.  ",
+    "subtitle_translator": "Traducteur de sous-titres",
+    "transcribe_youtube": "Transcrire une vidéo YouTube",
+    "srt_generator": "Générateur SRT",
+    "transcribe_arabic": "Transcrire l'arabe",
+    "transcribe_spanish": "Transcrire l'espagnol",
+    "transcribe_french": "Transcrire le français"
+  }
 }

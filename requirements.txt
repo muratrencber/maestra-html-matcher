@@ -1,0 +1,4 @@
+beautifulsoup4==4.12.2
+deep-translator==1.11.1
+lxml==4.9.2
+pyparsing==3.0.9

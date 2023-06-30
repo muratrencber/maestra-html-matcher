@@ -1,34 +1,54 @@
 {
-    "name": "Español",
-    "flag": "es",
-    "button_text":"Búsqueda de archivos",
-    "notice_text":"*No credit card or account required",
-    "brands-using":"Marcas que utilizan Maestra:",
-    "breadcrumbs":{
-        "home":{
-            "path":"es",
-            "display":"Hogar"
-        },
-        "tools":{
-            "path":"es/herramientas",
-            "display":"Herramientas"
-        },
-        "video-dubber":{
-            "path":"es/herramientas/doblador-de-video",
-            "display":"Doblador de Video"
-        },
-        "subtitle-translator":{
-            "path":"es/herramientas/traductor-de-subtítulos",
-            "display":"Traductor de subtítulos"
-        }
+  "name": "Español",
+  "flag": "es",
+  "button_text": "Búsqueda de archivos",
+  "notice_text": "*No credit card or account required",
+  "brands-using": "Marcas que utilizan Maestra:",
+  "breadcrumbs": {
+    "home": {
+      "path": "es",
+      "display": "Hogar"
     },
-    "footer":{
-        "copy_text":"© 2023 Katara Tech, Inc. Todos los derechos reservados.  ",
-        "subtitle_translator": "Traductor de subtítulos" ,
-        "transcribe_youtube":  "Transcribir video de YouTube" ,
-        "srt_generator":       "Generador SRT" ,
-        "transcribe_arabic":   "Transcribir árabe" ,
-        "transcribe_spanish":  "Transcribir español" ,
-        "transcribe_french":   "Transcribir francés"
+    "tools": {
+      "path": "es/herramientas",
+      "display": "Herramientas"
+    },
+    "video-dubber": {
+      "path": "es/herramientas/doblador-de-video",
+      "display": "Doblador de Video"
+    },
+    "subtitle-translator": {
+      "path": "es/herramientas/traductor-de-subtítulos",
+      "display": "Traductor de subtítulos"
+    },
+    "audio-to-text": {
+      "path": "es/herramientas/audio-a-texto",
+      "display": "Audio a Texto"
+    },
+    "video-translator": {
+      "path": "es/herramientas/traductor-de-video",
+      "display": "Traductor de Vídeo"
+    },
+    "convert-mp3-to-text": {
+      "path": "es/herramientas/audio-a-texto/convertir-mp3-a-texto",
+      "display": "Convertir MP3 a Texto"
+    },
+    "video-to-text": {
+      "path": "es/herramientas/video-a-texto",
+      "display": "vídeo a texto"
+    },
+    "convert-mp4-to-text": {
+      "path": "es/herramientas/video-a-texto/convertir-mp4-a-texto",
+      "display": "convertir mp4 a texto"
     }
+  },
+  "footer": {
+    "copy_text": "© 2023 Katara Tech, Inc. Todos los derechos reservados.  ",
+    "subtitle_translator": "Traductor de subtítulos",
+    "transcribe_youtube": "Transcribir video de YouTube",
+    "srt_generator": "Generador SRT",
+    "transcribe_arabic": "Transcribir árabe",
+    "transcribe_spanish": "Transcribir español",
+    "transcribe_french": "Transcribir francés"
+  }
 }
