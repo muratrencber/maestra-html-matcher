@@ -21,6 +21,10 @@
 #include <../default_changes.match>
 #include <../footer_change_v2.match>
 
+%head% <-> %%:
+    %meta[property="og:url"]%.content = f"https://maestra.ai/{breadcrumbs.video-translator.path}"
+    %link[rel="canonical"]%.href = f"https://maestra.ai/{breadcrumbs.video-translator.path}"
+
 %html%.lang = {environ.lang}
 %body > main% <-> %body%:
     %img%[3:7].alt = %img%[8:12].alt

@@ -17,6 +17,10 @@
 
 #include <../default_changes.match>
 
+%head% <-> %%:
+    %meta[property="og:url"]%.content = f"https://maestra.ai/{breadcrumbs.video-dubber.path}"
+    %link[rel="canonical"]%.href = f"https://maestra.ai/{breadcrumbs.video-dubber.path}"
+
 %html%.lang = {environ.lang}
 %body > main% <-> %body%:
     %ul[class="breadcrumb-row container"]% <-> %%:
