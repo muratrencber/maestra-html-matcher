@@ -3,8 +3,7 @@ import insobjects as io
 import re
 import os
 from debug_print import log
-from insobjects import FormattedLiteral, Literal, DictionaryKey, CSSSelector, Instruction, Command, RemoveCommand, ReplaceCommand, TranslateCommand, InstructionType
-
+from insobjects import *
         
 def parse_c3s(line, lineno, res: pp.ParseResults):
     selector = CSSSelector(res[0])
@@ -103,7 +102,10 @@ def parse_instr(line, lineno, res: pp.ParseResults):
             space_count += 4
         else:
             break
-    ins = res[0]
+    ins = res[-1]
+    ins.conditions = res[:-1]
+    res.clear()
+    res.append(ins)
     if type(ins) == Instruction:
         #print("new depth:",space_count//4)
         ins.depth = space_count // 4
@@ -154,6 +156,12 @@ def parse_dict_literal(line, lineno, res: pp.ParseResults):
     keys = res[0].split(".")
     replace_pr(DictionaryKey(keys), res)
 
+def parse_condition(line, lineno, res: pp.ParseResults):
+    _, _, lhs_literal, _, rhs_literal, _ = res
+    condition = EqualityCondition(lhs_literal, rhs_literal)
+    res.clear()
+    res.append(condition)
+
 def replace_pr(value, res: pp.ParseResults):
     res.clear()
     res.append(value)
@@ -196,14 +204,15 @@ def parse_file(path: str) -> tuple[list[Command], list[Instruction]]:
     creatins = pp.QuotedString("+","+").add_parse_action(parse_creat)
     revassnins = (expr +"=>"+expr).add_parse_action(parse_assign)
     assnins = pp.Or([expr+"="+expr, expr+"<="+expr]).add_parse_action(parse_assign)
-    ins = pp.Or([assnins, revassnins, creatins, ctxins]).add_parse_action(parse_instr)
+    condition = ("if"+"("+literal+"is"+literal+")").add_parse_action(parse_condition)
+    ins = (pp.Optional(condition)+pp.Or([assnins, revassnins, creatins, ctxins])).add_parse_action(parse_instr)
     replacecmd = pp.Or([("rreplace"+literal+literal), ("treplace"+literal+literal)]).add_parse_action(parse_replace)
     translatecmd = ("translate"+c3sm).add_parse_action(parse_translate)
     removecmd = pp.Or([("rremove"+c3sm), ("tremove"+c3sm)]).add_parse_action(parse_remove)
     dictcmd = ("addict" + formattedliteral).add_parse_action(lambda l,ln,r: replace_pr(io.AddDictCommand(r[1]), r))
     cmd = pp.Or([replacecmd, removecmd, dictcmd, translatecmd])
     cmdins = ("#"+cmd).add_parse_action(parse_cmd)
-    line = pp.Or([cmdins, ins])
+    line =  pp.Or([cmdins, ins])
 
     f = open(path, "r", encoding="utf8")
     content = f.read()

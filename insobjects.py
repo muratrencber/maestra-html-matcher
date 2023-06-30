@@ -71,6 +71,19 @@ class FormattedLiteral(Expression):
     def get_value(self, context):
         return "".join([e if isinstance(e, str) else e.get_value(context) for e in self.expressions])
 
+class Condition:
+    def __init__(self) -> None:
+        pass
+    def test(self, context) -> bool:
+        pass
+
+class EqualityCondition(Condition):
+    def __init__(self, lhs: Literal, rhs: Literal) -> None:
+        self.lhs: Literal = lhs
+        self.rhs: Literal = rhs
+    
+    def test(self, context) -> bool:
+        return self.lhs.get_value(context) == self.rhs.get_value(context)
 
 class CSSSelector(Expression):
     def __init__(self, res) -> None:
@@ -162,16 +175,25 @@ class CSSSelector(Expression):
 
 
 class Instruction():
-    def __init__(self, type) -> None:
+    def __init__(self, type, conditions = []) -> None:
         self.type: InstructionType = type
         self.operands: list[Expression] = []
         self.depth: int = 0
         self.sub_instructions: list[Instruction] = []
+        self.conditions: list[Condition] = conditions
+
+    def check_conditions(self, context)->bool:
+        for c in self.conditions:
+            if not c.test(context):
+                return False
+        return True
 
     def add_operand(self, operand: Expression):
         self.operands.append(operand)
 
     def apply(self, context: dict):
+        if not self.check_conditions(context):
+            return
         log(self.type, ":", [str(op) for op in self.operands])
         log("Subinstruction count:", len(self.sub_instructions))
         if self.type == InstructionType.ASSIGN or self.type == InstructionType.ASSIGN_REVERSE:
